@@ -305,3 +305,48 @@ li {
     }
 
 }
+/* Content Card */
+
+#contentCard {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 80vh;
+
+}
+
+.card {
+
+    width: 700px;
+
+    max-width: 100%;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 14px;
+
+    padding: 32px;
+
+    background: #ffffff;
+
+}
+
+.card-title {
+
+    font-size: 18px;
+
+    margin-bottom: 16px;
+
+}
+
+.card-text {
+
+    color: #555;
+
+    line-height: 1.7;
+
+}
