@@ -62,19 +62,35 @@
 ],
 "compliance": [
   {
-    "framework": "NIST AI RMF",
+    "type": "framework",
+    "name": "NIST AI Risk Management Framework (AI RMF)",
     "reference": ""
   },
   {
-    "framework": "ISO/IEC 42001",
+    "type": "standard",
+    "name": "ISO/IEC 42001:2023 Artificial Intelligence Management System",
     "reference": ""
   },
   {
-    "framework": "ISO 27001",
+    "type": "regulation",
+    "name": "General Data Protection Regulation (GDPR)",
     "reference": ""
   }
 ],
-    "guardrails": []
+    "guardrails": [
+  {
+    "name": "Identity Creation Authorization Check",
+    "trigger": "Before creating customer identity"
+  },
+  {
+    "name": "Duplicate Identity Detection",
+    "trigger": "When identity match validation fails"
+  },
+  {
+    "name": "Privileged Access Validation",
+    "trigger": "Before CIAM write operation"
+  }
+]
   },
   {
   "sequence": 2,
@@ -107,19 +123,22 @@
     }
   ],
   "compliance": [
-    {
-      "framework": "NIST Privacy Framework",
-      "reference": ""
-    },
-    {
-      "framework": "ISO/IEC 27701",
-      "reference": ""
-    },
-    {
-      "framework": "GDPR Privacy Principles",
-      "reference": ""
-    }
-  ],
+  {
+    "type": "framework",
+    "name": "NIST Privacy Framework",
+    "reference": ""
+  },
+  {
+    "type": "standard",
+    "name": "ISO/IEC 27701:2019 Privacy Information Management System",
+    "reference": ""
+  },
+  {
+    "type": "regulation",
+    "name": "General Data Protection Regulation (GDPR)",
+    "reference": ""
+  }
+],
   "guardrails": [
     {
       "name": "Consent Capture Validation",
@@ -169,19 +188,22 @@
     }
   ],
   "compliance": [
-    {
-      "framework": "NIST AI RMF",
-      "reference": ""
-    },
-    {
-      "framework": "ISO/IEC 42001",
-      "reference": ""
-    },
-    {
-      "framework": "NIST Privacy Framework",
-      "reference": ""
-    }
-  ],
+  {
+    "type": "framework",
+    "name": "NIST AI Risk Management Framework (AI RMF)",
+    "reference": ""
+  },
+  {
+    "type": "standard",
+    "name": "ISO/IEC 42001:2023 Artificial Intelligence Management System (AIMS)",
+    "reference": ""
+  },
+  {
+    "type": "framework",
+    "name": "NIST Privacy Framework",
+    "reference": ""
+  }
+],
   "guardrails": [
     {
       "name": "Data Quality Validation Threshold",
@@ -232,19 +254,35 @@
   ],
   "compliance": [
   {
-    "framework": "ISO 27001",
+    "type": "standard",
+    "name": "ISO/IEC 27001:2022 Information Security Management System",
     "reference": ""
   },
   {
-    "framework": "ISO/IEC 27701",
+    "type": "standard",
+    "name": "ISO/IEC 27701:2019 Privacy Information Management System (PIMS)",
     "reference": ""
   },
   {
-    "framework": "NIST Privacy Framework",
+    "type": "framework",
+    "name": "NIST Privacy Framework",
     "reference": ""
   }
 ],
-  "guardrails": []
+  "guardrails": [
+  {
+    "name": "Customer Data Access Validation",
+    "trigger": "Before storing customer profile"
+  },
+  {
+    "name": "Data Retention Policy Enforcement",
+    "trigger": "During customer profile lifecycle management"
+  },
+  {
+    "name": "Sensitive Data Protection Check",
+    "trigger": "Before repository update"
+  }
+]
 },
  {
   "sequence": 5,
@@ -279,21 +317,37 @@
       "name": "Notification Failure Risk"
     }
   ],
-  "compliance": [
+ "compliance": [
   {
-    "framework": "ISO 27001",
+    "type": "standard",
+    "name": "ISO/IEC 27001:2022 Information Security Management System",
     "reference": ""
   },
   {
-    "framework": "ISO/IEC 42001",
+    "type": "standard",
+    "name": "ISO/IEC 42001:2023 Artificial Intelligence Management System (AIMS)",
     "reference": ""
   },
   {
-    "framework": "NIST AI RMF",
+    "type": "framework",
+    "name": "NIST AI Risk Management Framework (AI RMF)",
     "reference": ""
   }
 ],
-  "guardrails": []
+  "guardrails": [
+  {
+    "name": "Customer Communication Authorization",
+    "trigger": "Before sending registration confirmation"
+  },
+  {
+    "name": "Sensitive Information Masking",
+    "trigger": "Before outbound communication"
+  },
+  {
+    "name": "Communication Audit Logging",
+    "trigger": "After notification delivery"
+  }
+]
 }
   ],
 
