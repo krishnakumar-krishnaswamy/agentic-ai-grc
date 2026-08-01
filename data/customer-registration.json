@@ -6,7 +6,28 @@
     "domain": "Customer Contact Center"
   },
 
-  "agentCollaboration": [],
+  "agentCollaboration": [
+  {
+    "sequence": 1,
+    "agent": "Identity Verification Agent",
+    "purpose": "Verifies customer identity information during registration."
+  },
+  {
+    "sequence": 2,
+    "agent": "Consent Management Agent",
+    "purpose": "Manages customer consent capture and privacy preferences."
+  },
+  {
+    "sequence": 3,
+    "agent": "Customer Data Agent",
+    "purpose": "Validates and manages customer profile information."
+  },
+  {
+    "sequence": 4,
+    "agent": "Notification Agent",
+    "purpose": "Communicates registration outcomes and customer updates."
+  }
+],
 
   "actions": [],
 
