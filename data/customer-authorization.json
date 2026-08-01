@@ -1,9 +1,6 @@
 {
   "metadata": {},
-
-  "integrationFlow": [],
-
-  "actionMatrix": [],
-
+  "agentCollaboration": [],
+  "actions": [],
   "ui": {}
 }
