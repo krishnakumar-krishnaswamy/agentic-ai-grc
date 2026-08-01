@@ -1,6 +1,14 @@
 {
-  "metadata": {},
+  "metadata": {
+    "id": "customer-registration",
+    "name": "Customer Registration Agent",
+    "description": "Autonomous agent responsible for onboarding new customers by coordinating identity, consent, customer data, and communication capabilities across enterprise systems.",
+    "domain": "Customer Contact Center"
+  },
+
   "agentCollaboration": [],
+
   "actions": [],
+
   "ui": {}
 }
