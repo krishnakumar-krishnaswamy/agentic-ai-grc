@@ -45,7 +45,18 @@
       "Identity Fraud Risk",
       "Unauthorized Identity Creation Risk",
       "Identity Data Exposure Risk"
-    ]
+    ],
+ "compliance": [
+  {
+    "framework": "NIST AI RMF"
+  },
+  {
+    "framework": "ISO/IEC 42001"
+  },
+  {
+    "framework": "ISO 27001"
+  }
+]
   },
   {
     "sequence": 2,
@@ -118,7 +129,7 @@
       "Notification Failure Risk"
     ]
   }
-],
+  ],
 
   "ui": {}
 }
