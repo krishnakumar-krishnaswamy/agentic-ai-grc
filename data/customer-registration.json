@@ -40,6 +40,11 @@
       "Agent Identity Management",
       "AI Agent Accountability",
       "Identity Lifecycle Governance"
+    ],
+    "risks": [
+      "Identity Fraud Risk",
+      "Unauthorized Identity Creation Risk",
+      "Identity Data Exposure Risk"
     ]
   },
   {
@@ -52,6 +57,11 @@
       "Consent Governance",
       "Data Usage Governance",
       "Privacy Policy Governance"
+    ],
+    "risks": [
+      "Consent Misuse Risk",
+      "Privacy Violation Risk",
+      "Incorrect Consent Capture Risk"
     ]
   },
   {
@@ -65,6 +75,11 @@
       "Data Governance",
       "Data Quality Governance",
       "Validation Policy Governance"
+    ],
+    "risks": [
+      "Incorrect Data Validation Risk",
+      "Poor Data Quality Risk",
+      "Decision Accuracy Risk"
     ]
   },
   {
@@ -78,6 +93,11 @@
       "Data Ownership Governance",
       "Access Governance",
       "Information Lifecycle Governance"
+    ],
+    "risks": [
+      "Unauthorized Data Access Risk",
+      "Data Retention Risk",
+      "Customer Information Exposure Risk"
     ]
   },
   {
@@ -91,6 +111,11 @@
       "Communication Governance",
       "Customer Notification Governance",
       "Audit Governance"
+    ],
+    "risks": [
+      "Incorrect Customer Communication Risk",
+      "Information Disclosure Risk",
+      "Notification Failure Risk"
     ]
   }
 ],
