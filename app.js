@@ -1,323 +1,210 @@
-async function loadAgent(agentId) {
+// -----------------------------
+// Navigation
+// -----------------------------
 
-    try {
+function setActive(selectedButton) {
 
-        const response = await fetch(
-            `data/${agentId}.json`
-        );
+    const buttons = document.querySelectorAll(".menu-item");
 
-        const agentData = await response.json();
+    buttons.forEach(button => {
 
-
-        renderMetadata(agentData.metadata);
-
-        renderCollaboration(
-            agentData.agentCollaboration
-        );
-
-        renderActions(
-            agentData.actions
-        );
-
-
-    } catch (error) {
-
-        console.error(
-            "Unable to load agent data:",
-            error
-        );
-
-    }
-
-}
-
-
-
-function renderMetadata(metadata) {
-
-    const container =
-        document.getElementById(
-            "agentMetadata"
-        );
-
-
-    container.innerHTML = `
-
-        <div class="agent-title">
-            ${metadata.name}
-        </div>
-
-        <div class="agent-description">
-            ${metadata.description}
-        </div>
-
-        <div class="agent-description">
-            Domain: ${metadata.domain}
-        </div>
-
-    `;
-
-}
-
-
-
-
-function renderCollaboration(collaboration) {
-
-
-    const container =
-        document.getElementById(
-            "agentCollaboration"
-        );
-
-
-    let html = `
-
-        <div class="governance-block">
-
-            <div class="action-name">
-                Agent Collaboration
-            </div>
-
-            <ul>
-
-    `;
-
-
-    collaboration.forEach(agent => {
-
-
-        html += `
-
-            <li>
-                ${agent.sequence}. 
-                ${agent.name}
-                -
-                ${agent.purpose}
-            </li>
-
-        `;
+        button.classList.remove("active");
 
     });
 
+    selectedButton.classList.add("active");
+
+}
 
 
-    html += `
 
-            </ul>
+// -----------------------------
+// Home
+// -----------------------------
+
+function showHome(button) {
+
+    setActive(button);
+
+    document.getElementById("contentCard").innerHTML = `
+
+        <div class="card">
+
+            <div class="card-title">
+                Home
+            </div>
+
+            <div class="card-text">
+
+                Welcome to the Agentic AI GRC pilot.
+
+                <br><br>
+
+                Select an item from the left navigation
+                to explore the governance model.
+
+            </div>
 
         </div>
 
     `;
 
-
-    container.innerHTML = html;
-
-
 }
 
 
 
+// -----------------------------
+// Agentic AI GRC
+// -----------------------------
 
-function renderActions(actions) {
+function showAgenticGRC(button) {
 
+    setActive(button);
 
-    const container =
-        document.getElementById(
-            "agentActions"
-        );
+    document.getElementById("contentCard").innerHTML = `
 
+        <div class="card">
 
-    let html = "";
+            <div class="card-title">
 
-
-    actions.forEach(action => {
-
-
-        html += `
-
-        <div class="governance-block">
-
-
-            <div class="action-name">
-
-                Action ${action.sequence}: 
-                ${action.name}
+                Agentic AI GRC
 
             </div>
 
+            <div class="card-text">
 
+                Enterprise pilot demonstrating how
+                autonomous AI agents are governed using
+                standardized Governance, Risk,
+                Compliance and Guardrails.
 
-            <div class="field-label">
-                Enterprise Systems
+                <br><br>
+
+                Current Pilot
+
+                <ul>
+
+                    <li>Customer Registration Agent</li>
+
+                    <li>JSON-driven architecture</li>
+
+                    <li>Enterprise governance model</li>
+
+                </ul>
+
             </div>
-
-            <ul>
-
-        `;
-
-
-        action.enterpriseSystems.forEach(system => {
-
-            html += `
-
-                <li>
-                    ${system.name}
-                </li>
-
-            `;
-
-        });
-
-
-
-        html += `
-
-            </ul>
-
-
-            <div class="field-label">
-                Governance
-            </div>
-
-            <ul>
-
-        `;
-
-
-
-        action.governance.forEach(item => {
-
-            html += `
-
-                <li>
-                    ${item.name}
-                </li>
-
-            `;
-
-        });
-
-
-
-        html += `
-
-            </ul>
-
-
-            <div class="field-label">
-                Risks
-            </div>
-
-            <ul>
-
-        `;
-
-
-
-        action.risks.forEach(item => {
-
-            html += `
-
-                <li>
-                    ${item.name}
-                </li>
-
-            `;
-
-        });
-
-
-
-        html += `
-
-            </ul>
-
-
-            <div class="field-label">
-                Compliance
-            </div>
-
-
-        `;
-
-
-
-        action.compliance.forEach(item => {
-
-            html += `
-
-                <div class="compliance-item">
-
-                    ${item.type}:
-                    ${item.name}
-
-                </div>
-
-            `;
-
-        });
-
-
-
-        html += `
-
-
-            <div class="field-label">
-                Guardrails
-            </div>
-
-
-            <ul>
-
-        `;
-
-
-
-        action.guardrails.forEach(item => {
-
-
-            html += `
-
-                <li class="guardrail-item">
-
-                    ${item.name}
-                    -
-                    ${item.trigger}
-
-                </li>
-
-            `;
-
-
-        });
-
-
-
-        html += `
-
-            </ul>
-
 
         </div>
 
-        `;
-
-
-    });
-
-
-
-    container.innerHTML = html;
-
+    `;
 
 }
 
 
 
+// -----------------------------
+// Customer Registration
+// -----------------------------
 
-// Load default agent when page opens
+function loadAgent(agentId, button) {
 
-loadAgent(
-    "customer-registration"
-);
+    setActive(button);
+
+    document.getElementById("contentCard").innerHTML = `
+
+        <div class="card">
+
+            <div class="card-title">
+
+                Customer Registration Agent
+
+            </div>
+
+            <div class="card-text">
+
+                JSON rendering will be implemented
+                in the next step.
+
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+
+// -----------------------------
+// Customer Authentication
+// -----------------------------
+
+function showAuthentication(button) {
+
+    setActive(button);
+
+    document.getElementById("contentCard").innerHTML = `
+
+        <div class="card">
+
+            <div class="card-title">
+
+                Customer Authentication Agent
+
+            </div>
+
+            <div class="card-text">
+
+                Coming soon.
+
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+
+// -----------------------------
+// Customer Authorization
+// -----------------------------
+
+function showAuthorization(button) {
+
+    setActive(button);
+
+    document.getElementById("contentCard").innerHTML = `
+
+        <div class="card">
+
+            <div class="card-title">
+
+                Customer Authorization Agent
+
+            </div>
+
+            <div class="card-text">
+
+                Coming soon.
+
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+
+// -----------------------------
+// Default Landing Page
+// -----------------------------
+
+window.onload = function () {
+
+    showHome(document.getElementById("homeMenu"));
+
+};
