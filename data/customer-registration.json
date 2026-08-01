@@ -77,64 +77,126 @@
     "guardrails": []
   },
   {
-    "sequence": 2,
-    "name": "Capture Customer Consent",
-    "enterpriseSystems": [
+  "sequence": 2,
+  "name": "Capture Customer Consent",
+  "enterpriseSystems": [
+    {
+      "name": "Consent Management Platform"
+    }
+  ],
+  "governance": [
+    {
+      "name": "Consent Governance"
+    },
+    {
+      "name": "Data Usage Governance"
+    },
+    {
+      "name": "Privacy Policy Governance"
+    }
+  ],
+  "risks": [
+    {
+      "name": "Consent Misuse Risk"
+    },
+    {
+      "name": "Privacy Violation Risk"
+    },
+    {
+      "name": "Incorrect Consent Capture Risk"
+    }
+  ],
+  "compliance": [
+    {
+      "framework": "NIST Privacy Framework",
+      "reference": ""
+    },
+    {
+      "framework": "ISO/IEC 27701",
+      "reference": ""
+    },
+    {
+      "framework": "GDPR Privacy Principles",
+      "reference": ""
+    }
+  ],
+  "guardrails": [
+    {
+      "name": "Consent Capture Validation",
+      "trigger": ""
+    },
+    {
+      "name": "Customer Consent Verification",
+      "trigger": ""
+    },
+    {
+      "name": "Privacy Preference Enforcement",
+      "trigger": ""
+    }
+  ]
+},
   {
-    "name": "Consent Management Platform"
-  }
-],
-    "governance": [
-  {
-    "name": "Consent Governance"
-  },
-  {
-    "name": "Data Usage Governance"
-  }
-],
-    "risks": [
-  {
-    "name": "Consent Misuse Risk"
-  },
-  {
-    "name": "Privacy Violation Risk"
-  }
-]
-  },
-  {
-    "sequence": 3,
-    "name": "Validate Registration Data",
-    "enterpriseSystems": [
-  {
-    "name": "CRM / Customer Data Platform"
-  },
-  {
-    "name": "Data Quality Services"
-  }
-],
-    "governance": [
-      {
+  "sequence": 3,
+  "name": "Validate Registration Data",
+  "enterpriseSystems": [
+    {
+      "name": "CRM / Customer Data Platform"
+    },
+    {
+      "name": "Data Quality Services"
+    }
+  ],
+  "governance": [
+    {
       "name": "Data Governance"
-      },
-      {
+    },
+    {
       "name": "Data Quality Governance"
-      },
-      {
+    },
+    {
       "name": "Validation Policy Governance"
-      }
-    ],
-    "risks": [
-      {
+    }
+  ],
+  "risks": [
+    {
       "name": "Incorrect Data Validation Risk"
-      },
-      {
+    },
+    {
       "name": "Poor Data Quality Risk"
-      },
-      {
+    },
+    {
       "name": "Decision Accuracy Risk"
-      }
-    ]
-  },
+    }
+  ],
+  "compliance": [
+    {
+      "framework": "NIST AI RMF",
+      "reference": ""
+    },
+    {
+      "framework": "ISO/IEC 42001",
+      "reference": ""
+    },
+    {
+      "framework": "NIST Privacy Framework",
+      "reference": ""
+    }
+  ],
+  "guardrails": [
+    {
+      "name": "Data Quality Validation Threshold",
+      "trigger": ""
+    },
+    {
+      "name": "Data Anomaly Detection",
+      "trigger": ""
+    },
+    {
+      "name": "Restricted Data Processing",
+      "trigger": ""
+    }
+  ]
+},
  {
   "sequence": 4,
   "name": "Store Customer Profile",
