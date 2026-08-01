@@ -29,7 +29,28 @@
   }
 ],
 
-  "actions": [],
+  "actions": [
+  {
+    "sequence": 1,
+    "name": "Create Customer Identity"
+  },
+  {
+    "sequence": 2,
+    "name": "Capture Customer Consent"
+  },
+  {
+    "sequence": 3,
+    "name": "Validate Registration Data"
+  },
+  {
+    "sequence": 4,
+    "name": "Store Customer Profile"
+  },
+  {
+    "sequence": 5,
+    "name": "Send Registration Confirmation"
+  }
+],
 
   "ui": {}
 }
