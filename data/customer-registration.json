@@ -35,6 +35,11 @@
     "name": "Create Customer Identity",
     "enterpriseSystems": [
       "CIAM / Identity Platform"
+    ],
+    "governance": [
+      "Agent Identity Management",
+      "AI Agent Accountability",
+      "Identity Lifecycle Governance"
     ]
   },
   {
@@ -42,6 +47,11 @@
     "name": "Capture Customer Consent",
     "enterpriseSystems": [
       "Consent Management Platform"
+    ],
+    "governance": [
+      "Consent Governance",
+      "Data Usage Governance",
+      "Privacy Policy Governance"
     ]
   },
   {
@@ -50,6 +60,11 @@
     "enterpriseSystems": [
       "CRM / Customer Data Platform",
       "Data Quality Services"
+    ],
+    "governance": [
+      "Data Governance",
+      "Data Quality Governance",
+      "Validation Policy Governance"
     ]
   },
   {
@@ -58,6 +73,11 @@
     "enterpriseSystems": [
       "CRM Platform",
       "Customer Data Repository"
+    ],
+    "governance": [
+      "Data Ownership Governance",
+      "Access Governance",
+      "Information Lifecycle Governance"
     ]
   },
   {
@@ -66,6 +86,11 @@
     "enterpriseSystems": [
       "Notification Platform",
       "Communication Services"
+    ],
+    "governance": [
+      "Communication Governance",
+      "Customer Notification Governance",
+      "Audit Governance"
     ]
   }
 ],
