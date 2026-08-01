@@ -8,23 +8,23 @@
 
   "agentCollaboration": [
   {
-    "sequence": 1,
-    "agent": "Identity Verification Agent",
-    "purpose": "Verifies customer identity information during registration."
-  },
+  "sequence": 1,
+  "name": "Identity Verification Agent",
+  "purpose": "Verifies customer identity information during registration."
+},
   {
     "sequence": 2,
-    "agent": "Consent Management Agent",
+    "name": "Consent Management Agent",
     "purpose": "Manages customer consent capture and privacy preferences."
   },
   {
     "sequence": 3,
-    "agent": "Customer Data Agent",
+    "name": "Customer Data Agent",
     "purpose": "Validates and manages customer profile information."
   },
   {
     "sequence": 4,
-    "agent": "Notification Agent",
+    "name": "Notification Agent",
     "purpose": "Communicates registration outcomes and customer updates."
   }
 ],
@@ -34,101 +34,205 @@
     "sequence": 1,
     "name": "Create Customer Identity",
     "enterpriseSystems": [
-      "CIAM / Identity Platform"
-    ],
-    "governance": [
-      "Agent Identity Management",
-      "AI Agent Accountability",
-      "Identity Lifecycle Governance"
-    ],
-    "risks": [
-      "Identity Fraud Risk",
-      "Unauthorized Identity Creation Risk",
-      "Identity Data Exposure Risk"
-    ],
- "compliance": [
   {
-    "framework": "NIST AI RMF"
-  },
-  {
-    "framework": "ISO/IEC 42001"
-  },
-  {
-    "framework": "ISO 27001"
+    "name": "CIAM / Identity Platform"
   }
-]
+],
+    "governance": [
+  {
+    "name": "Agent Identity Management"
+  },
+  {
+    "name": "AI Agent Accountability"
+  },
+  {
+    "name": "Identity Lifecycle Governance"
+  }
+],
+    "risks": [
+  {
+    "name": "Identity Fraud Risk"
+  },
+  {
+    "name": "Unauthorized Identity Creation Risk"
+  },
+  {
+    "name": "Identity Data Exposure Risk"
+  }
+],
+"compliance": [
+  {
+    "framework": "NIST AI RMF",
+    "reference": ""
+  },
+  {
+    "framework": "ISO/IEC 42001",
+    "reference": ""
+  },
+  {
+    "framework": "ISO 27001",
+    "reference": ""
+  }
+],
+    "guardrails": []
   },
   {
     "sequence": 2,
     "name": "Capture Customer Consent",
     "enterpriseSystems": [
-      "Consent Management Platform"
-    ],
+  {
+    "name": "Consent Management Platform"
+  }
+],
     "governance": [
-      "Consent Governance",
-      "Data Usage Governance",
-      "Privacy Policy Governance"
-    ],
+  {
+    "name": "Consent Governance"
+  },
+  {
+    "name": "Data Usage Governance"
+  }
+],
     "risks": [
-      "Consent Misuse Risk",
-      "Privacy Violation Risk",
-      "Incorrect Consent Capture Risk"
-    ]
+  {
+    "name": "Consent Misuse Risk"
+  },
+  {
+    "name": "Privacy Violation Risk"
+  }
+]
   },
   {
     "sequence": 3,
     "name": "Validate Registration Data",
     "enterpriseSystems": [
-      "CRM / Customer Data Platform",
-      "Data Quality Services"
-    ],
-    "governance": [
-      "Data Governance",
-      "Data Quality Governance",
-      "Validation Policy Governance"
-    ],
-    "risks": [
-      "Incorrect Data Validation Risk",
-      "Poor Data Quality Risk",
-      "Decision Accuracy Risk"
-    ]
+  {
+    "name": "CRM / Customer Data Platform"
   },
   {
-    "sequence": 4,
-    "name": "Store Customer Profile",
-    "enterpriseSystems": [
-      "CRM Platform",
-      "Customer Data Repository"
-    ],
-    "governance": [
-      "Data Ownership Governance",
-      "Access Governance",
-      "Information Lifecycle Governance"
-    ],
-    "risks": [
-      "Unauthorized Data Access Risk",
-      "Data Retention Risk",
-      "Customer Information Exposure Risk"
-    ]
-  },
-  {
-    "sequence": 5,
-    "name": "Send Registration Confirmation",
-    "enterpriseSystems": [
-      "Notification Platform",
-      "Communication Services"
-    ],
-    "governance": [
-      "Communication Governance",
-      "Customer Notification Governance",
-      "Audit Governance"
-    ],
-    "risks": [
-      "Incorrect Customer Communication Risk",
-      "Information Disclosure Risk",
-      "Notification Failure Risk"
-    ]
+    "name": "Data Quality Services"
   }
+],
+    "governance": [
+      {
+      "name": "Data Governance"
+      },
+      {
+      "name": "Data Quality Governance"
+      },
+      {
+      "name": "Validation Policy Governance"
+      }
+    ],
+    "risks": [
+      {
+      "name": "Incorrect Data Validation Risk"
+      },
+      {
+      "name": "Poor Data Quality Risk"
+      },
+      {
+      "name": "Decision Accuracy Risk"
+      }
+    ]
+  },
+ {
+  "sequence": 4,
+  "name": "Store Customer Profile",
+  "enterpriseSystems": [
+    {
+      "name": "CRM Platform"
+    },
+    {
+      "name": "Customer Data Repository"
+    }
+  ],
+  "governance": [
+    {
+      "name": "Data Ownership Governance"
+    },
+    {
+      "name": "Access Governance"
+    },
+    {
+      "name": "Information Lifecycle Governance"
+    }
+  ],
+  "risks": [
+    {
+      "name": "Unauthorized Data Access Risk"
+    },
+    {
+      "name": "Data Retention Risk"
+    },
+    {
+      "name": "Customer Information Exposure Risk"
+    }
+  ],
+  "compliance": [
+    {
+      "framework": "ISO 27001",
+      "reference": ""
+    },
+    {
+      "framework": "ISO/IEC 27701",
+      "reference": ""
+    },
+    {
+      "framework": "Data Protection Requirements",
+      "reference": ""
+    }
+  ],
+  "guardrails": []
+},
+ {
+  "sequence": 5,
+  "name": "Send Registration Confirmation",
+  "enterpriseSystems": [
+    {
+      "name": "Notification Platform"
+    },
+    {
+      "name": "Communication Services"
+    }
+  ],
+  "governance": [
+    {
+      "name": "Communication Governance"
+    },
+    {
+      "name": "Customer Notification Governance"
+    },
+    {
+      "name": "Audit Governance"
+    }
+  ],
+  "risks": [
+    {
+      "name": "Incorrect Customer Communication Risk"
+    },
+    {
+      "name": "Information Disclosure Risk"
+    },
+    {
+      "name": "Notification Failure Risk"
+    }
+  ],
+  "compliance": [
+    {
+      "framework": "ISO 27001",
+      "reference": ""
+    },
+    {
+      "framework": "Communication Governance Requirements",
+      "reference": ""
+    },
+    {
+      "framework": "Audit Logging Requirements",
+      "reference": ""
+    }
+  ],
+  "guardrails": []
+}
   ],
 
   "ui": {}
