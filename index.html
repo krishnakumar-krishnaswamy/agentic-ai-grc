@@ -2,93 +2,155 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Fn Ln Portfolio</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
+    <title>Agentic AI GRC</title>
+
+    <link rel="stylesheet"
+          href="styles.css">
+
 </head>
-
 
 <body>
 
-    <div class="app-container">
+<div class="app-container">
 
 
-        <!-- Left Sidebar -->
-        <aside class="sidebar">
+    <!-- ========================= -->
+    <!-- Left Navigation -->
+    <!-- ========================= -->
 
-            <div class="portfolio-name">
-                Fn Ln Portfolio
+    <aside class="sidebar">
+
+
+        <div class="profile-section">
+
+            <img src="assets/images/profile.png"
+                 class="profile-image"
+                 alt="Profile">
+
+            <div class="profile-name">
+
+                Fn Ln
+
             </div>
 
-
-            <nav class="project-navigation">
-
-                <button class="project-item active"
-                        onclick="loadAgent('customer-registration')">
-                    Customer Registration Agent
-                </button>
+        </div>
 
 
-                <button class="project-item">
-                    Customer Authentication Agent
-                </button>
+        <button class="menu-item"
 
+                onclick="window.open('https://YOUR-GITHUB-PAGES-PORTFOLIO','_blank')">
 
-                <button class="project-item">
-                    Customer Authorization Agent
-                </button>
+            <img src="assets/icons/folder.svg">
 
-            </nav>
+            <span>Portfolio</span>
 
-
-            <div class="contact">
-                Contact
-            </div>
-
-
-        </aside>
+        </button>
 
 
 
-        <!-- Main Governance Canvas -->
-        <main class="main-content">
+        <nav class="navigation">
 
 
-            <!-- Agent Information -->
-            <section id="agentMetadata"
-                     class="content-section">
+            <button class="menu-item active"
 
-            </section>
+                    id="homeMenu"
 
+                    onclick="showHome(this)">
 
+                <img src="assets/icons/home.svg">
 
-            <!-- Agent Collaboration -->
-            <section id="agentCollaboration"
-                     class="content-section">
+                <span>Home</span>
 
-            </section>
+            </button>
 
 
 
-            <!-- Agent Actions -->
-            <section id="agentActions"
-                     class="content-section">
+            <button class="menu-item parent"
 
-            </section>
+                    id="grcMenu"
+
+                    onclick="showAgenticGRC(this)">
+
+                <img src="assets/icons/workflow.svg">
+
+                <span>Agentic AI GRC</span>
+
+            </button>
 
 
-        </main>
+
+            <button class="menu-item child"
+
+                    id="registrationMenu"
+
+                    onclick="loadAgent('customer-registration',this)">
+
+                <img src="assets/icons/user-plus.svg">
+
+                <span>Customer Registration Agent</span>
+
+            </button>
 
 
-    </div>
+
+            <button class="menu-item child"
+
+                    id="authenticationMenu"
+
+                    onclick="showAuthentication(this)">
+
+                <img src="assets/icons/shield-check.svg">
+
+                <span>Customer Authentication Agent</span>
+
+            </button>
 
 
 
-    <script src="app.js"></script>
+            <button class="menu-item child"
 
+                    id="authorizationMenu"
+
+                    onclick="showAuthorization(this)">
+
+                <img src="assets/icons/key-round.svg">
+
+                <span>Customer Authorization Agent</span>
+
+            </button>
+
+
+
+        </nav>
+
+
+    </aside>
+
+
+
+    <!-- ========================= -->
+    <!-- Right Content -->
+    <!-- ========================= -->
+
+    <main class="main-content">
+
+        <div id="contentCard">
+
+        </div>
+
+    </main>
+
+
+</div>
+
+
+<script src="app.js"></script>
 
 </body>
 
