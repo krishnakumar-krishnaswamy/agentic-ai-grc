@@ -231,19 +231,19 @@
     }
   ],
   "compliance": [
-    {
-      "framework": "ISO 27001",
-      "reference": ""
-    },
-    {
-      "framework": "ISO/IEC 27701",
-      "reference": ""
-    },
-    {
-      "framework": "Data Protection Requirements",
-      "reference": ""
-    }
-  ],
+  {
+    "framework": "ISO 27001",
+    "reference": ""
+  },
+  {
+    "framework": "ISO/IEC 27701",
+    "reference": ""
+  },
+  {
+    "framework": "NIST Privacy Framework",
+    "reference": ""
+  }
+],
   "guardrails": []
 },
  {
@@ -280,19 +280,19 @@
     }
   ],
   "compliance": [
-    {
-      "framework": "ISO 27001",
-      "reference": ""
-    },
-    {
-      "framework": "Communication Governance Requirements",
-      "reference": ""
-    },
-    {
-      "framework": "Audit Logging Requirements",
-      "reference": ""
-    }
-  ],
+  {
+    "framework": "ISO 27001",
+    "reference": ""
+  },
+  {
+    "framework": "ISO/IEC 42001",
+    "reference": ""
+  },
+  {
+    "framework": "NIST AI RMF",
+    "reference": ""
+  }
+],
   "guardrails": []
 }
   ],
