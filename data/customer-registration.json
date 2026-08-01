@@ -32,23 +32,41 @@
   "actions": [
   {
     "sequence": 1,
-    "name": "Create Customer Identity"
+    "name": "Create Customer Identity",
+    "enterpriseSystems": [
+      "CIAM / Identity Platform"
+    ]
   },
   {
     "sequence": 2,
-    "name": "Capture Customer Consent"
+    "name": "Capture Customer Consent",
+    "enterpriseSystems": [
+      "Consent Management Platform"
+    ]
   },
   {
     "sequence": 3,
-    "name": "Validate Registration Data"
+    "name": "Validate Registration Data",
+    "enterpriseSystems": [
+      "CRM / Customer Data Platform",
+      "Data Quality Services"
+    ]
   },
   {
     "sequence": 4,
-    "name": "Store Customer Profile"
+    "name": "Store Customer Profile",
+    "enterpriseSystems": [
+      "CRM Platform",
+      "Customer Data Repository"
+    ]
   },
   {
     "sequence": 5,
-    "name": "Send Registration Confirmation"
+    "name": "Send Registration Confirmation",
+    "enterpriseSystems": [
+      "Notification Platform",
+      "Communication Services"
+    ]
   }
 ],
 
