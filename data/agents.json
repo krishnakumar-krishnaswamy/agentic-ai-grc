@@ -1,1 +1,31 @@
+{
+  "application": {
+    "name": "Agentic AI GRC",
+    "version": "1.0.0",
+    "description": "Interactive governance framework for autonomous enterprise AI agents."
+  },
 
+  "agents": [
+    {
+      "id": "customer-registration",
+      "name": "Customer Registration Agent",
+      "icon": "registration.svg",
+      "dataFile": "customer-registration.json",
+      "order": 1
+    },
+    {
+      "id": "customer-authentication",
+      "name": "Customer Authentication Agent",
+      "icon": "authentication.svg",
+      "dataFile": "customer-authentication.json",
+      "order": 2
+    },
+    {
+      "id": "customer-authorization",
+      "name": "Customer Authorization Agent",
+      "icon": "authorization.svg",
+      "dataFile": "customer-authorization.json",
+      "order": 3
+    }
+  ]
+}
