@@ -64,6 +64,18 @@ body {
 
 }
 
+.profile-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
 .profile-image {
 
     width: 72px;
