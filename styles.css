@@ -64,7 +64,7 @@ body {
 
 }
 
-.profile img {
+.profile-image {
 
     width: 72px;
 
@@ -74,7 +74,9 @@ body {
 
     object-fit: cover;
 
-    margin-bottom: 10px;
+    display: block;
+
+    margin: 0 auto 12px auto;
 
 }
 
