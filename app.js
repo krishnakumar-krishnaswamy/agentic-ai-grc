@@ -20,7 +20,24 @@ function setActiveMenu(selectedButton) {
 
 }
 
+function toggleGRC(button) {
 
+    const children =
+        document.getElementById("grcChildren");
+
+    children.classList.toggle("open");
+
+    setActiveMenu(button);
+
+    renderCard(
+
+        "Agentic AI GRC",
+
+        "Reference architecture for governing enterprise AI agents through standardized governance, enterprise controls, compliance frameworks, risks and operational guardrails."
+
+    );
+
+}
 
 // --------------------------------------------
 // Render Center Card
@@ -97,6 +114,10 @@ function showAgenticGRC(button) {
 
 function loadAgent(agentId, button) {
 
+    document
+        .getElementById("grcChildren")
+        .classList.add("open");
+
     setActiveMenu(button);
 
     renderCard(
@@ -116,6 +137,10 @@ function loadAgent(agentId, button) {
 // --------------------------------------------
 
 function showAuthentication(button) {
+
+    document
+        .getElementById("grcChildren")
+        .classList.add("open");
 
     setActiveMenu(button);
 
@@ -137,6 +162,9 @@ function showAuthentication(button) {
 
 function showAuthorization(button) {
 
+    document
+        .getElementById("grcChildren")
+        .classList.add("open");
     setActiveMenu(button);
 
     renderCard(
