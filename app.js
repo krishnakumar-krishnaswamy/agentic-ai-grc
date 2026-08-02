@@ -64,7 +64,6 @@ function openPortfolio(button) {
     "https://krishnakumar-krishnaswamy.github.io/",
     "_blank"
 );
-    );
 
 }
 
