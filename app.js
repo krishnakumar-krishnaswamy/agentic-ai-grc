@@ -109,7 +109,7 @@ function showHome(button) {
         "Home", 
         
         "Enterprise governance reference implementation for autonomous AI agents. Demonstrates governance, risk, compliance, guardrails and enterprise system integration."
-
+        
     );
 
 }
