@@ -49,7 +49,9 @@ body {
 
     flex-direction: column;
 
-    background: #ffffff;
+    background: #f7f7f8;
+
+  /*  background: #ffffff; */
 
 }
 
