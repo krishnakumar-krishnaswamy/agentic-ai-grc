@@ -78,6 +78,16 @@ body {
 
 }
 
+.portfolio-button {
+
+    width: auto;
+
+    justify-content: center;
+
+    margin-top: 6px;
+
+}
+
 .profile-image {
 
     width: 64px;
