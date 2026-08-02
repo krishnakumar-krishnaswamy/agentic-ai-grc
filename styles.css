@@ -132,6 +132,18 @@ body {
 
 }
 
+/* ---------- Menu Divider ---------- */
+
+.menu-divider {
+
+    border: none;
+
+    border-top: 1px solid #ececec;
+
+    margin: 12px 0 12px 0;
+
+}
+
 
 /* ---------- Navigation ---------- */
 
