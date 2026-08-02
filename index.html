@@ -73,59 +73,62 @@
 
             <button class="menu-item parent"
 
-                    id="grcMenu"
+        id="grcMenu"
 
-                    onclick="showAgenticGRC(this)">
+        onclick="toggleGRC(this)">
 
-                <img src="assets/icons/workflow.svg">
+    <img src="assets/icons/workflow.svg">
 
-                <span>Agentic AI GRC</span>
+    <span>Agentic AI GRC</span>
 
-            </button>
-
-
-
-            <button class="menu-item child"
-
-                    id="registrationMenu"
-
-                    onclick="loadAgent('customer-registration',this)">
-
-                <img src="assets/icons/user-plus.svg">
-
-                <span>Customer Registration Agent</span>
-
-            </button>
+</button>
 
 
+<div id="grcChildren" class="child-menu">
 
-            <button class="menu-item child"
 
-                    id="authenticationMenu"
+    <button class="menu-item child"
 
-                    onclick="showAuthentication(this)">
+            id="registrationMenu"
 
-                <img src="assets/icons/shield-check.svg">
+            onclick="loadAgent('customer-registration',this)">
 
-                <span>Customer Authentication Agent</span>
+        <img src="assets/icons/user-plus.svg">
 
-            </button>
+        <span>Customer Registration Agent</span>
+
+    </button>
 
 
 
-            <button class="menu-item child"
+    <button class="menu-item child"
 
-                    id="authorizationMenu"
+            id="authenticationMenu"
 
-                    onclick="showAuthorization(this)">
+            onclick="showAuthentication(this)">
 
-                <img src="assets/icons/key-round.svg">
+        <img src="assets/icons/shield-check.svg">
 
-                <span>Customer Authorization Agent</span>
+        <span>Customer Authentication Agent</span>
 
-            </button>
+    </button>
 
 
+
+    <button class="menu-item child"
+
+            id="authorizationMenu"
+
+            onclick="showAuthorization(this)">
+
+        <img src="assets/icons/key-round.svg">
+
+        <span>Customer Authorization Agent</span>
+
+    </button>
+
+
+</div>
 
         </nav>
 
