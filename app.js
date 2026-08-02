@@ -11,7 +11,7 @@
 function setActiveMenu(selectedButton) {
 
     document
-        .querySelectorAll(".navigation .menu-item")
+        .querySelectorAll(".sidebar .menu-item")
         .forEach(button => {
             button.classList.remove("active");
         });
