@@ -62,7 +62,7 @@ function openPortfolio(button) {
 
     window.open(
         "https://krishnakumar-krishnaswamy.github.io/",
-        "_blank"
+        "_self"
     );
 
 }
