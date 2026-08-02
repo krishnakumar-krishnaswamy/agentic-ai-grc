@@ -56,6 +56,17 @@ function toggleGRC(button) {
 
 }
 
+function openPortfolio(button) {
+
+    setActiveMenu(button);
+
+    window.open(
+        "https://krishnakumar-krishnaswamy.github.io/",
+        "_blank"
+    );
+
+}
+
 // --------------------------------------------
 // Render Center Card
 // --------------------------------------------
