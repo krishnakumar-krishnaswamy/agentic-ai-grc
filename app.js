@@ -106,8 +106,7 @@ function showHome(button) {
 
     renderCard(
 
-        "Home",
-
+        
         "Enterprise governance reference implementation for autonomous AI agents. Demonstrates governance, risk, compliance, guardrails and enterprise system integration."
 
     );
