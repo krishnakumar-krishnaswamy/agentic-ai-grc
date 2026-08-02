@@ -1,16 +1,20 @@
-// -----------------------------
+// ============================================
+// Agentic AI GRC
+// app.js
+// ============================================
+
+
+// --------------------------------------------
 // Navigation
-// -----------------------------
+// --------------------------------------------
 
-function setActive(selectedButton) {
+function setActiveMenu(selectedButton) {
 
-    const buttons = document.querySelectorAll(".menu-item");
-
-    buttons.forEach(button => {
-
-        button.classList.remove("active");
-
-    });
+    document
+        .querySelectorAll(".navigation .menu-item")
+        .forEach(button => {
+            button.classList.remove("active");
+        });
 
     selectedButton.classList.add("active");
 
@@ -18,193 +22,144 @@ function setActive(selectedButton) {
 
 
 
-// -----------------------------
+// --------------------------------------------
+// Render Center Card
+// --------------------------------------------
+
+function renderCard(title, description) {
+
+    const container =
+        document.getElementById("contentCard");
+
+    container.innerHTML = `
+
+        <div class="center-card">
+
+            <div class="card-title">
+                ${title}
+            </div>
+
+            <div class="card-description">
+                ${description}
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+
+// --------------------------------------------
 // Home
-// -----------------------------
+// --------------------------------------------
 
 function showHome(button) {
 
-    setActive(button);
+    setActiveMenu(button);
 
-    document.getElementById("contentCard").innerHTML = `
+    renderCard(
 
-        <div class="card">
+        "Home",
 
-            <div class="card-title">
-                Home
-            </div>
+        "Enterprise governance reference implementation for autonomous AI agents. Demonstrates governance, risk, compliance, guardrails and enterprise system integration."
 
-            <div class="card-text">
-
-                Welcome to the Agentic AI GRC pilot.
-
-                <br><br>
-
-                Select an item from the left navigation
-                to explore the governance model.
-
-            </div>
-
-        </div>
-
-    `;
+    );
 
 }
 
 
 
-// -----------------------------
+// --------------------------------------------
 // Agentic AI GRC
-// -----------------------------
+// --------------------------------------------
 
 function showAgenticGRC(button) {
 
-    setActive(button);
+    setActiveMenu(button);
 
-    document.getElementById("contentCard").innerHTML = `
+    renderCard(
 
-        <div class="card">
+        "Agentic AI GRC",
 
-            <div class="card-title">
+        "Reference architecture for governing enterprise AI agents through standardized governance, enterprise controls, compliance frameworks, risks and operational guardrails."
 
-                Agentic AI GRC
-
-            </div>
-
-            <div class="card-text">
-
-                Enterprise pilot demonstrating how
-                autonomous AI agents are governed using
-                standardized Governance, Risk,
-                Compliance and Guardrails.
-
-                <br><br>
-
-                Current Pilot
-
-                <ul>
-
-                    <li>Customer Registration Agent</li>
-
-                    <li>JSON-driven architecture</li>
-
-                    <li>Enterprise governance model</li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    `;
+    );
 
 }
 
 
 
-// -----------------------------
-// Customer Registration
-// -----------------------------
+// --------------------------------------------
+// Customer Registration Agent
+// --------------------------------------------
 
 function loadAgent(agentId, button) {
 
-    setActive(button);
+    setActiveMenu(button);
 
-    document.getElementById("contentCard").innerHTML = `
+    renderCard(
 
-        <div class="card">
+        "Customer Registration Agent",
 
-            <div class="card-title">
+        "Loading enterprise governance model..."
 
-                Customer Registration Agent
-
-            </div>
-
-            <div class="card-text">
-
-                JSON rendering will be implemented
-                in the next step.
-
-            </div>
-
-        </div>
-
-    `;
+    );
 
 }
 
 
 
-// -----------------------------
-// Customer Authentication
-// -----------------------------
+// --------------------------------------------
+// Customer Authentication Agent
+// --------------------------------------------
 
 function showAuthentication(button) {
 
-    setActive(button);
+    setActiveMenu(button);
 
-    document.getElementById("contentCard").innerHTML = `
+    renderCard(
 
-        <div class="card">
+        "Customer Authentication Agent",
 
-            <div class="card-title">
+        "Pilot implementation coming soon."
 
-                Customer Authentication Agent
-
-            </div>
-
-            <div class="card-text">
-
-                Coming soon.
-
-            </div>
-
-        </div>
-
-    `;
+    );
 
 }
 
 
 
-// -----------------------------
-// Customer Authorization
-// -----------------------------
+// --------------------------------------------
+// Customer Authorization Agent
+// --------------------------------------------
 
 function showAuthorization(button) {
 
-    setActive(button);
+    setActiveMenu(button);
 
-    document.getElementById("contentCard").innerHTML = `
+    renderCard(
 
-        <div class="card">
+        "Customer Authorization Agent",
 
-            <div class="card-title">
+        "Pilot implementation coming soon."
 
-                Customer Authorization Agent
-
-            </div>
-
-            <div class="card-text">
-
-                Coming soon.
-
-            </div>
-
-        </div>
-
-    `;
+    );
 
 }
 
 
 
-// -----------------------------
+// --------------------------------------------
 // Default Landing Page
-// -----------------------------
+// --------------------------------------------
 
 window.onload = function () {
 
-    showHome(document.getElementById("homeMenu"));
+    const homeButton =
+        document.getElementById("homeMenu");
+
+    showHome(homeButton);
 
 };
