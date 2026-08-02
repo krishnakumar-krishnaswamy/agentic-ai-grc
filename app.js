@@ -60,8 +60,10 @@ function openPortfolio(button) {
 
     setActiveMenu(button);
 
-    window.location.href =
-    "https://krishnakumar-krishnaswamy.github.io/";
+    window.open(
+    "https://krishnakumar-krishnaswamy.github.io/",
+    "_blank"
+);
     );
 
 }
