@@ -25,9 +25,26 @@ function toggleGRC(button) {
     const children =
         document.getElementById("grcChildren");
 
+    const arrow =
+        document.getElementById("grcArrow");
+
+
     children.classList.toggle("open");
 
+
+    if (children.classList.contains("open")) {
+
+        arrow.textContent = "▼";
+
+    } else {
+
+        arrow.textContent = "▶";
+
+    }
+
+
     setActiveMenu(button);
+
 
     renderCard(
 
