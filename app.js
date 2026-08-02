@@ -106,9 +106,9 @@ function showHome(button) {
 
     renderCard(
 
-        "Home", 
+        "Agentic AI GRC Pilot", 
         
-        "Enterprise governance reference implementation for autonomous AI agents. Demonstrates governance, risk, compliance, guardrails and enterprise system integration."
+        "Pilot GRC reference model for autonomous AI agents focused on Customer Identity and Access Management (CIAM). Demonstrates mapping AI agents to relevant enterprise governance, risk, compliance, guardrails, and industry standards. Pilot scope intentionally focuses on representative AI agents to demonstrate a reusable governance model."
         
     );
 
