@@ -42,7 +42,7 @@ function toggleGRC(button) {
 
     }
 
-
+/*
     setActiveMenu(button);
 
 
@@ -52,7 +52,7 @@ function toggleGRC(button) {
 
         "Reference architecture for governing enterprise AI agents through standardized governance, enterprise controls, compliance frameworks, risks and operational guardrails."
 
-    );
+    ); */
 
 }
 
