@@ -385,6 +385,118 @@ body {
 
 }
 
+/* ==========================================
+   Customer Registration Agent
+========================================== */
+
+.card-divider {
+
+    border: none;
+
+    border-top: 1px solid #ececec;
+
+    margin: 20px 0;
+
+}
+
+
+.agent-layout {
+
+    display: flex;
+
+    gap: 28px;
+
+    min-height: 320px;
+
+}
+
+
+.agent-panel {
+
+    width: 42%;
+
+    border-right: 1px solid #ececec;
+
+    padding-right: 20px;
+
+}
+
+
+.grc-panel {
+
+    flex: 1;
+
+}
+
+
+.panel-title {
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    margin-bottom: 18px;
+
+    color: #202123;
+
+}
+
+
+.agent-item {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: none;
+
+    background: transparent;
+
+    border-radius: 8px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #202123;
+
+    text-align: left;
+
+}
+
+
+.agent-item img {
+
+    width: 18px;
+
+    height: 18px;
+
+    flex-shrink: 0;
+
+}
+
+
+.agent-item:hover {
+
+    background: #f5f5f5;
+
+}
+
+
+.agent-item.active {
+
+    background: #ececec;
+
+}
+
 
 /* ---------- Responsive ---------- */
 
