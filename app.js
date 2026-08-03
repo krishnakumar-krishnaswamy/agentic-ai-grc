@@ -109,6 +109,7 @@ function showHome(button) {
     "Agentic AI GRC Pilot",
 
     `
+    <br>
 
     <p>
     Pilot GRC reference model for autonomous AI agents focused on
