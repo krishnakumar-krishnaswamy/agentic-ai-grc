@@ -211,6 +211,10 @@ function showAgenticGRC(button) {
 // Customer Registration Agent
 // --------------------------------------------
 
+// --------------------------------------------
+// Customer Registration Agent
+// --------------------------------------------
+
 function loadAgent(agentId, button) {
 
     document
@@ -219,13 +223,87 @@ function loadAgent(agentId, button) {
 
     setActiveMenu(button);
 
-    renderCard(
+    const container =
+        document.getElementById("contentCard");
 
-        "Customer Registration Agent",
+    container.innerHTML = `
 
-        "Loading enterprise governance model..."
+    <div class="center-card">
 
-    );
+        <div class="card-title">
+
+            Customer Registration Agent
+
+        </div>
+
+        <div class="card-description">
+
+            Autonomous AI agent responsible for customer onboarding.
+
+        </div>
+
+        <hr class="card-divider">
+
+        <div class="agent-layout">
+
+            <div class="agent-panel">
+
+                <div class="panel-title">
+
+                    Trusted AI Agent Interactions
+
+                </div>
+
+                <button class="agent-item">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>Identity Verification Agent</span>
+
+                </button>
+
+                <button class="agent-item">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>Consent Management Agent</span>
+
+                </button>
+
+                <button class="agent-item">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>Customer Data Agent</span>
+
+                </button>
+
+                <button class="agent-item">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>Notification Agent</span>
+
+                </button>
+
+            </div>
+
+
+            <div class="grc-panel">
+
+                <div class="panel-title">
+
+                    GRC
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    `;
 
 }
 
