@@ -106,27 +106,32 @@ function showHome(button) {
 
     renderCard(
 
-        "Agentic AI GRC Pilot",
+    "Agentic AI GRC Pilot",
 
-        `
-        <p>
-        Pilot GRC reference model for autonomous AI agents focused on
-        Customer Identity and Access Management (CIAM).
-        </p>
+    `
 
-        <p>
-        Demonstrates mapping AI agents with relevant enterprise
-        governance, risk, compliance, guardrails, and industry standards.
-        </p>
+    <p>
+    Pilot GRC reference model for autonomous AI agents focused on
+    Customer Identity and Access Management (CIAM).
+    </p>
 
-        <p>
-        Scope intentionally limited to representative AI agents to
-        demonstrate governance patterns rather than a complete enterprise
-        AI ecosystem.
-        </p>
-        `
+    <br>
 
-    );
+    <p>
+    Demonstrates mapping AI agents with relevant enterprise governance,
+    risk, compliance, guardrails, and industry standards.
+    </p>
+
+    <br>
+
+    <p>
+    Scope intentionally limited to a small set of representative AI agents
+    to demonstrate the governance model rather than a complete enterprise implementation.
+    </p>
+
+    `
+
+);
 
 }
 
