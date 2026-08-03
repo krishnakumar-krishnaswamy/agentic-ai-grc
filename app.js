@@ -147,10 +147,9 @@ function showAgenticGRC(button) {
 
     renderCard(
 
-        "Agentic AI GRC",
+        "Agentic AI GRC Pilot",
 
         `
-
         <br>
 
         <p>
