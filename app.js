@@ -216,9 +216,6 @@ function renderCard(title, description) {
 
 }
 
-// --------------------------------------------
-// Render GRC Panel
-// --------------------------------------------
 
 // --------------------------------------------
 // Render GRC Panel
@@ -432,7 +429,9 @@ function loadAgent(agentId, button) {
 
             <div class="grc-panel">
 
-    ${renderGRC()}
+    ${renderGRC(
+    customerRegistrationAgentRegistry.identityVerification
+)}
 
 </div>
 
