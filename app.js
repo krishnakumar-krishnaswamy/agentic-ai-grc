@@ -182,6 +182,29 @@ function renderCard(title, description) {
 
 }
 
+// --------------------------------------------
+// Render GRC Panel
+// --------------------------------------------
+
+function renderGRC(agent) {
+
+    return `
+
+        <div class="panel-title">
+
+            <img src="assets/icons/grc.svg">
+
+            <span>GRC</span>
+
+        </div>
+
+        <div id="grcContent">
+
+        </div>
+
+    `;
+
+}
 
 
 // --------------------------------------------
@@ -355,15 +378,9 @@ function loadAgent(agentId, button) {
 
             <div class="grc-panel">
 
-                <div class="panel-title">
-
-    <img src="assets/icons/grc.svg">
-
-    <span>GRC</span>
+    ${renderGRC()}
 
 </div>
-
-            </div>
 
         </div>
 
