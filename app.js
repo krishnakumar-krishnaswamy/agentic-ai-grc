@@ -3,6 +3,69 @@
 // app.js
 // ============================================
 
+// ============================================
+// Trusted AI Agent Registry
+// ============================================
+
+const trustedAgentRegistry = {
+
+    identityVerification: {
+
+        name: "Identity Verification Agent",
+
+        governance: [],
+
+        risks: [],
+
+        guardrails: [],
+
+        industryReferences: []
+
+    },
+
+    consentManagement: {
+
+        name: "Consent Management Agent",
+
+        governance: [],
+
+        risks: [],
+
+        guardrails: [],
+
+        industryReferences: []
+
+    },
+
+    customerData: {
+
+        name: "Customer Data Agent",
+
+        governance: [],
+
+        risks: [],
+
+        guardrails: [],
+
+        industryReferences: []
+
+    },
+
+    notification: {
+
+        name: "Notification Agent",
+
+        governance: [],
+
+        risks: [],
+
+        guardrails: [],
+
+        industryReferences: []
+
+    }
+
+};
 
 // --------------------------------------------
 // Navigation
