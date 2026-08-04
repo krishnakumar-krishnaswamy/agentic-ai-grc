@@ -408,13 +408,15 @@ function loadAgent(agentId, button) {
 
 </div>
 
-                <button class="agent-item">
+                <button
+    class="agent-item active"
+    onclick="setActiveTrustedAgent(this)">
 
-                    <img src="assets/icons/agent.svg">
+    <img src="assets/icons/agent.svg">
 
-                    <span>Identity Verification Agent</span>
+    <span>Identity Verification Agent</span>
 
-                </button>
+</button>
 
                 <button
     class="agent-item active"
