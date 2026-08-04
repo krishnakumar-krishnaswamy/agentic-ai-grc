@@ -275,21 +275,41 @@ function renderGRC(agent) {
 
         <div class="grc-section">
 
-            <div class="grc-section-title">
+    <div class="grc-section-title">
 
-    <img src="assets/icons/governance.svg">
+        <img src="assets/icons/governance.svg">
 
-    <span>Governance</span>
+        <span>Governance</span>
+
+    </div>
+
+    <div class="chip-container">
+
+        ${renderChips(agent.governance)}
+
+    </div>
 
 </div>
 
-            <div class="chip-container">
+<hr class="panel-divider">
 
-    ${renderChips(agent.governance)}
+<div class="grc-section">
+
+    <div class="grc-section-title">
+
+        <img src="assets/icons/risk.svg">
+
+        <span>Risks</span>
+
+    </div>
+
+    <div class="chip-container">
+
+        ${renderChips(agent.risks)}
+
+    </div>
 
 </div>
-
-        </div>
 
     `;
 
