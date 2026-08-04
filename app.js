@@ -227,11 +227,13 @@ function loadAgent(agentId, button) {
 
     <div class="center-card">
 
-        <div class="card-title">
+        <div class="card-header">
 
-            Customer Registration Agent
+    <img src="assets/icons/user-plus.svg">
 
-        </div>
+    <span>Customer Registration Agent</span>
+
+</div>
 
         <div class="card-description">
 
@@ -247,9 +249,11 @@ function loadAgent(agentId, button) {
 
                 <div class="panel-title">
 
-                    Trusted AI Agent Interactions
+    <img src="assets/icons/trusted-agents.svg">
 
-                </div>
+    <span>Trusted AI Agent Interactions</span>
+
+</div>
 
                 <button class="agent-item">
 
@@ -290,9 +294,11 @@ function loadAgent(agentId, button) {
 
                 <div class="panel-title">
 
-                    GRC
+    <img src="assets/icons/grc.svg">
 
-                </div>
+    <span>GRC</span>
+
+</div>
 
             </div>
 
