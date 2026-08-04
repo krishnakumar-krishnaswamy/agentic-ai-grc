@@ -11,17 +11,51 @@ const trustedAgentRegistry = {
 
     identityVerification: {
 
-        name: "Identity Verification Agent",
+    name: "Identity Verification Agent",
 
-        governance: [],
+    governance: [
 
-        risks: [],
+        "Agent Identity Management",
 
-        guardrails: [],
+        "Identity Lifecycle Governance",
 
-        industryReferences: []
+        "Authentication Governance"
 
-    },
+    ],
+
+    risks: [
+
+        "Identity Fraud",
+
+        "Unauthorized Identity Verification",
+
+        "Identity Data Exposure"
+
+    ],
+
+    guardrails: [
+
+        "Identity Verification Validation",
+
+        "Privileged Access Validation",
+
+        "Audit Logging"
+
+    ],
+
+    industryReferences: [
+
+        "NIST AI RMF",
+
+        "ISO/IEC 42001",
+
+        "ISO/IEC 27001",
+
+        "Google Secure AI Framework (SAIF)"
+
+    ]
+
+},
 
     consentManagement: {
 
