@@ -448,9 +448,6 @@ function loadAgent(agentId, button) {
 
                 </button>
 
-<button
-    class="agent-item"
-    onclick="setActiveTrustedAgent(this)">
             </div>
 
 
