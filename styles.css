@@ -453,6 +453,16 @@ body {
 
 }
 
+.panel-divider {
+
+    border: none;
+
+    border-top: 1px solid #ececec;
+
+    margin: 0 0 14px 0;
+
+}
+
 .panel-title img {
 
     width: 18px;
