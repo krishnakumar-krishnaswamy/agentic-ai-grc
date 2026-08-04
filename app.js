@@ -331,6 +331,26 @@ function renderGRC(agent) {
 
 </div>
 
+<hr class="panel-divider">
+
+<div class="grc-section">
+
+    <div class="grc-section-title">
+
+        <img src="assets/icons/industry-references.svg">
+
+        <span>Industry References</span>
+
+    </div>
+
+    <div class="chip-container">
+
+        ${renderChips(agent.industryReferences)}
+
+    </div>
+
+</div>
+
     `;
 
 }
