@@ -419,7 +419,7 @@ function loadAgent(agentId, button) {
 </button>
 
                 <button
-    class="agent-item active"
+    class="agent-item"
     onclick="setActiveTrustedAgent(this)">
 
                     <img src="assets/icons/agent.svg">
