@@ -7,7 +7,7 @@
 // Trusted AI Agent Registry
 // ============================================
 
-const trustedAgentRegistry = {
+const customerRegistrationAgentRegistry = {
 
     identityVerification: {
 
