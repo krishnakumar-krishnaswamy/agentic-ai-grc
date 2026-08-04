@@ -117,6 +117,22 @@ function setActiveMenu(selectedButton) {
 
 }
 
+// --------------------------------------------
+// Trusted AI Agent Selection
+// --------------------------------------------
+
+function setActiveTrustedAgent(selectedButton) {
+
+    document
+        .querySelectorAll(".agent-item")
+        .forEach(button => {
+            button.classList.remove("active");
+        });
+
+    selectedButton.classList.add("active");
+
+}
+
 function toggleGRC(button) {
 
     const children =
