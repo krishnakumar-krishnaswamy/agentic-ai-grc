@@ -220,6 +220,10 @@ function renderCard(title, description) {
 // Render GRC Panel
 // --------------------------------------------
 
+// --------------------------------------------
+// Render GRC Panel
+// --------------------------------------------
+
 function renderGRC(agent) {
 
     return `
@@ -232,7 +236,23 @@ function renderGRC(agent) {
 
         </div>
 
-        <div id="grcContent">
+        <div class="grc-section">
+
+            <div class="grc-section-title">
+
+                Governance
+
+            </div>
+
+            <ul class="grc-list">
+
+                ${agent.governance.map(item => `
+
+                    <li>${item}</li>
+
+                `).join("")}
+
+            </ul>
 
         </div>
 
