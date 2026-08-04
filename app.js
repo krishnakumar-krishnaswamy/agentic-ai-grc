@@ -121,7 +121,11 @@ function setActiveMenu(selectedButton) {
 // Trusted AI Agent Selection
 // --------------------------------------------
 
-function setActiveTrustedAgent(selectedButton) {
+// --------------------------------------------
+// Trusted AI Agent Selection
+// --------------------------------------------
+
+function selectTrustedAgent(agentKey, selectedButton) {
 
     document
         .querySelectorAll(".agent-item")
@@ -130,6 +134,11 @@ function setActiveTrustedAgent(selectedButton) {
         });
 
     selectedButton.classList.add("active");
+
+    document.getElementById("grcPanel").innerHTML =
+        renderGRC(
+            customerRegistrationAgentRegistry[agentKey]
+        );
 
 }
 
@@ -455,11 +464,13 @@ function loadAgent(agentId, button) {
             </div>
 
 
-            <div class="grc-panel">
+            <div
+    class="grc-panel"
+    id="grcPanel">
 
     ${renderGRC(
-    customerRegistrationAgentRegistry.identityVerificationAgent
-)}
+        customerRegistrationAgentRegistry.identityVerificationAgent
+    )}
 
 </div>
 
