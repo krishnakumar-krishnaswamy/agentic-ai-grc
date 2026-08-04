@@ -232,6 +232,50 @@ body {
 
 }
 
+/* ---------- Trusted AI Agent ---------- */
+
+.agent-item {
+
+    width: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #202123;
+
+    text-align: left;
+
+}
+
+.agent-item:hover {
+
+    background: #f5f5f5;
+
+}
+
+.agent-item.active {
+
+    background: #ececec;
+
+}
+
 /* ---------- Child Menu ---------- */
 
 .child-menu {
