@@ -51,8 +51,7 @@ body {
 
     background: #f7f7f8;
 
-  /*  background: #ffffff; */
-
+  
 }
 
 
@@ -188,39 +187,6 @@ body {
 
 
 /* ---------- Navigation Buttons ---------- */
-/*
-.navigation button {
-
-    width: 100%;
-
-    height: 40px;
-
-    border: none;
-
-    background: transparent;
-
-    cursor: pointer;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    padding: 0 12px;
-
-    border-radius: 8px;
-
-    text-align: left;
-
-    font-size: 14px;
-
-    font-family: inherit;
-
-    color: #202123;
-
-}
-*/
 
 .menu-item {
 
@@ -253,27 +219,12 @@ body {
     color: #202123;
 
 }
-/*
-.navigation button:hover {
-
-    background: #f5f5f5;
-
-}
-*/
 
 .menu-item:hover {
 
     background: #f5f5f5;
 
 }
-
-/*
-.navigation button.active {
-
-    background: #ececec;
-
-}
-*/
 
 .menu-item.active {
 
@@ -282,13 +233,6 @@ body {
 }
 
 /* ---------- Child Menu ---------- */
-/*
-.child-menu {
-
-    margin-left: 24px;
-
-}
-*/
 
 .child-menu {
 
@@ -388,27 +332,20 @@ body {
 
 }
 
-/* ---------- Card Text ---------- */
+/* ---------- Card Description ---------- */
 
-.center-card h2 {
-
-    font-size: 20px;
-
-    font-weight: 400;
-
-    margin-bottom: 18px;
-
-}
-
-.center-card p {
+.card-description {
 
     font-size: 14px;
 
-    line-height: 1.7;
+    color: #555555;
 
-    color: #555;
+    line-height: 1.6;
+
+    margin-bottom: 8px;
 
 }
+
 
 /* ==========================================
    Customer Registration Agent
