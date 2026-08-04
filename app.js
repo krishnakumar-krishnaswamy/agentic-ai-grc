@@ -423,7 +423,7 @@ function loadAgent(agentId, button) {
 
                 <button
     class="agent-item active"
-    onclick="setActiveTrustedAgent(this)">
+    onclick="selectTrustedAgent('identityVerificationAgent', this)">
 
     <img src="assets/icons/agent.svg">
 
@@ -433,7 +433,7 @@ function loadAgent(agentId, button) {
 
                 <button
     class="agent-item"
-    onclick="setActiveTrustedAgent(this)">
+    onclick="selectTrustedAgent('consentManagementAgent', this)">
 
                     <img src="assets/icons/agent.svg">
 
@@ -443,7 +443,7 @@ function loadAgent(agentId, button) {
 
                 <button
     class="agent-item"
-    onclick="setActiveTrustedAgent(this)">
+    onclick="selectTrustedAgent('customerDataAgent', this)">
 
                     <img src="assets/icons/agent.svg">
 
@@ -453,7 +453,7 @@ function loadAgent(agentId, button) {
 
                 <button
     class="agent-item"
-    onclick="setActiveTrustedAgent(this)">
+    onclick="selectTrustedAgent('notificationAgent', this)">
 
                     <img src="assets/icons/agent.svg">
 
