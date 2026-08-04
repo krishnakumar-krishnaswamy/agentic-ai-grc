@@ -311,6 +311,26 @@ function renderGRC(agent) {
 
 </div>
 
+<hr class="panel-divider">
+
+<div class="grc-section">
+
+    <div class="grc-section-title">
+
+        <img src="assets/icons/guardrails.svg">
+
+        <span>Guardrails</span>
+
+    </div>
+
+    <div class="chip-container">
+
+        ${renderChips(agent.guardrails)}
+
+    </div>
+
+</div>
+
     `;
 
 }
