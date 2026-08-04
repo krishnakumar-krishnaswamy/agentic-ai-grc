@@ -241,6 +241,23 @@ function renderCard(title, description) {
 
 }
 
+// --------------------------------------------
+// Render Enterprise Chips
+// --------------------------------------------
+
+function renderChips(items) {
+
+    return items.map(item => `
+
+        <span class="grc-chip">
+
+            ${item}
+
+        </span>
+
+    `).join("");
+
+}
 
 // --------------------------------------------
 // Render GRC Panel
@@ -268,15 +285,11 @@ function renderGRC(agent) {
 
             </div>
 
-            <ul class="grc-list">
+            <div class="chip-container">
 
-                ${agent.governance.map(item => `
+    ${renderChips(agent.governance)}
 
-                    <li>${item}</li>
-
-                `).join("")}
-
-            </ul>
+</div>
 
         </div>
 
