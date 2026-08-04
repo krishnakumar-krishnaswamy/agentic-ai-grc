@@ -416,7 +416,9 @@ function loadAgent(agentId, button) {
 
                 </button>
 
-                <button class="agent-item">
+                <button
+    class="agent-item active"
+    onclick="setActiveTrustedAgent(this)">
 
                     <img src="assets/icons/agent.svg">
 
@@ -424,7 +426,9 @@ function loadAgent(agentId, button) {
 
                 </button>
 
-                <button class="agent-item">
+                <button
+    class="agent-item"
+    onclick="setActiveTrustedAgent(this)">
 
                     <img src="assets/icons/agent.svg">
 
@@ -432,7 +436,9 @@ function loadAgent(agentId, button) {
 
                 </button>
 
-                <button class="agent-item">
+                <button
+    class="agent-item"
+    onclick="setActiveTrustedAgent(this)">
 
                     <img src="assets/icons/agent.svg">
 
@@ -440,6 +446,9 @@ function loadAgent(agentId, button) {
 
                 </button>
 
+<button
+    class="agent-item"
+    onclick="setActiveTrustedAgent(this)">
             </div>
 
 
