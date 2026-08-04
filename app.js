@@ -9,7 +9,7 @@
 
 const customerRegistrationAgentRegistry = {
 
-    identityVerification: {
+    identityVerificationAgent: {
 
     name: "Identity Verification Agent",
 
@@ -57,7 +57,7 @@ const customerRegistrationAgentRegistry = {
 
 },
 
-    consentManagement: {
+    consentManagementAgent: {
 
         name: "Consent Management Agent",
 
@@ -71,7 +71,7 @@ const customerRegistrationAgentRegistry = {
 
     },
 
-    customerData: {
+    customerDataAgent: {
 
         name: "Customer Data Agent",
 
@@ -85,7 +85,7 @@ const customerRegistrationAgentRegistry = {
 
     },
 
-    notification: {
+    notificationAgent: {
 
         name: "Notification Agent",
 
@@ -430,7 +430,7 @@ function loadAgent(agentId, button) {
             <div class="grc-panel">
 
     ${renderGRC(
-    customerRegistrationAgentRegistry.identityVerification
+    customerRegistrationAgentRegistry.identityVerificationAgent
 )}
 
 </div>
