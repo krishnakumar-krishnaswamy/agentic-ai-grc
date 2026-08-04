@@ -121,10 +121,6 @@ function setActiveMenu(selectedButton) {
 // Trusted AI Agent Selection
 // --------------------------------------------
 
-// --------------------------------------------
-// Trusted AI Agent Selection
-// --------------------------------------------
-
 function selectTrustedAgent(agentKey, selectedButton) {
 
     document
@@ -281,9 +277,11 @@ function renderGRC(agent) {
 
             <div class="grc-section-title">
 
-                Governance
+    <img src="assets/icons/governance.svg">
 
-            </div>
+    <span>Governance</span>
+
+</div>
 
             <div class="chip-container">
 
