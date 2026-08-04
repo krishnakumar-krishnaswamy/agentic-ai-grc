@@ -243,11 +243,13 @@ function renderGRC(agent) {
 
         <div class="panel-title">
 
-            <img src="assets/icons/grc.svg">
+    <img src="assets/icons/grc.svg">
 
-            <span>GRC</span>
+    <span>GRC</span>
 
-        </div>
+</div>
+
+<hr class="panel-divider">
 
         <div class="grc-section">
 
@@ -407,6 +409,8 @@ function loadAgent(agentId, button) {
     <span>Trusted AI Agent Interactions</span>
 
 </div>
+
+<hr class="panel-divider">
 
                 <button
     class="agent-item active"
