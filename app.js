@@ -296,7 +296,7 @@ function renderGRC(agent) {
 
     <div class="generate-grc-btn">
 
-    ▶ Generate Agentic AI GRC Profile
+    ▶ Build GRC Profile
 
 </div>
 
