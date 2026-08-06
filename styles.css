@@ -434,6 +434,12 @@ body {
 
 }
 
+.generate-grc-btn {
+
+    margin-bottom: 14px;
+
+}
+
 /* ---------- GRC Section ---------- */
 
 .grc-section-title {
@@ -515,12 +521,6 @@ body {
     margin-bottom: 18px;
 
     color: #202123;
-
-}
-
-.generate-grc-btn {
-
-    margin-bottom: 14px;
 
 }
 
