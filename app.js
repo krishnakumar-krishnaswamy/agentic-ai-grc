@@ -15,13 +15,34 @@ const customerRegistrationAgentRegistry = {
 
     governance: [
 
-        "Agent Identity Management",
+    {
 
-        "Identity Lifecycle Governance",
+        title: "Agent Identity Management",
 
-        "Authentication Governance"
+        businessRationale:
+        "Establishes trusted and accountable AI agent identity."
 
-    ],
+    },
+
+    {
+
+        title: "Identity Lifecycle Governance",
+
+        businessRationale:
+        "Ensures AI agents remain governed throughout their operational lifecycle."
+
+    },
+
+    {
+
+        title: "Authentication Governance",
+
+        businessRationale:
+        "Protects enterprise services from unauthorized AI agent access."
+
+    }
+
+],
 
     risks: [
 
