@@ -306,9 +306,26 @@ function renderGRC(agent) {
 
     <div class="chip-container">
 
-        ${renderChips(agent.governance)}
+    ${agent.governance.map(item => `
 
-    </div>
+        <div class="grc-chip">
+
+            ✓ ${item.title}
+
+            <br>
+
+            <span class="business-rationale">
+
+                Business Rationale:
+                ${item.businessRationale}
+
+            </span>
+
+        </div>
+
+    `).join("")}
+
+</div>
 
 </div>
 
