@@ -292,6 +292,8 @@ function renderGRC(agent) {
 
 </div>
 
+<hr class="panel-divider">
+
 <div class="grc-action">
 
     <div class="generate-grc-btn">
