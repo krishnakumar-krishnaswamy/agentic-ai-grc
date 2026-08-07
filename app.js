@@ -288,11 +288,13 @@ function renderGRC(agent) {
 
     <div class="grc-action">
 
-        <div class="generate-grc-btn">
+        <div
+    class="generate-grc-btn"
+    onclick="buildGRCProfile()">
 
-            ▶ Build GRC Profile
+    ▶ Build GRC Profile
 
-        </div>
+</div>
 
     </div>
 
@@ -641,6 +643,30 @@ function showAuthorization(button) {
         "Pilot implementation coming soon."
 
     );
+
+}
+
+// --------------------------------------------
+// BuildGRCProfile 
+// --------------------------------------------
+
+function buildGRCProfile() {
+
+    document.getElementById("grcHeader").innerHTML = `
+
+        <div class="grc-action">
+
+            <div class="generate-grc-btn">
+
+                <img src="assets/icons/building-grc.svg">
+
+                <span>Building GRC Profile...</span>
+
+            </div>
+
+        </div>
+
+    `;
 
 }
 
