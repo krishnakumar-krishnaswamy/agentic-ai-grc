@@ -654,9 +654,7 @@ function showAuthorization(button) {
 // --------------------------------------------
 
 function buildGRCProfile() {
-
-    document.getElementById("grcContent").style.display = "none";
-    
+      
     document.getElementById("grcHeader").innerHTML = `
 
         <div class="grc-action">
@@ -673,6 +671,8 @@ function buildGRCProfile() {
 
     `;
 
+    document.getElementById("grcContent").style.display = "none";
+    
 }
 
 
