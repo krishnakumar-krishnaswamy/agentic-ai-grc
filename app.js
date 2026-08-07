@@ -302,6 +302,8 @@ function renderGRC(agent) {
 
 <hr class="panel-divider">
 
+        <div id="grcContent">
+        
         <div class="grc-section">
 
     <div class="grc-section-title">
@@ -397,6 +399,7 @@ function renderGRC(agent) {
 
 </div>
 
+</div>
     `;
 
 }
