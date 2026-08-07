@@ -404,6 +404,14 @@ function renderGRC(agent) {
 
 }
 
+function renderGeneratedProfile(agent) {
+
+    return `
+
+    `;
+
+}
+
 
 // --------------------------------------------
 // Home
