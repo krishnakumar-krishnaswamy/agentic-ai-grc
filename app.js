@@ -647,7 +647,7 @@ function showAuthorization(button) {
 }
 
 // --------------------------------------------
-// BuildGRCProfile 
+// Build GRC Profile
 // --------------------------------------------
 
 function buildGRCProfile() {
@@ -669,7 +669,6 @@ function buildGRCProfile() {
     `;
 
 }
-
 
 
 // --------------------------------------------
