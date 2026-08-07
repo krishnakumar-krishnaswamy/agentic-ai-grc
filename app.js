@@ -286,132 +286,133 @@ function renderGRC(agent) {
 
         <div id="grcHeader">
 
-    <div class="grc-action">
+            <div class="grc-action">
 
-        <div
-    class="generate-grc-btn"
-    onclick="buildGRCProfile()">
+                <div
+                    class="generate-grc-btn"
+                    onclick="buildGRCProfile()">
 
-    ▶ Build GRC Profile
+                    ▶ Build GRC Profile
 
-</div>
+                </div>
 
-    </div>
-
-</div>
-
-<hr class="panel-divider">
-
-        <div id="grcContent">
-        
-        <div class="grc-section">
-
-    <div class="grc-section-title">
-
-        <img src="assets/icons/governance.svg">
-
-        <span>Governance</span>
-
-    </div>
-
-    <div class="chip-container">
-
-    ${agent.governance.map(item => `
-
-        <div class="grc-chip">
-
-            ✓ ${item.title}
-
-            <br>
-
-            <span class="business-rationale">
-
-                Business Rationale:
-                ${item.businessRationale}
-
-            </span>
+            </div>
 
         </div>
 
-    `).join("")}
+        <hr class="panel-divider">
 
-</div>
-
-</div>
-
-<hr class="panel-divider">
-
-<div class="grc-section">
-
-    <div class="grc-section-title">
-
-        <img src="assets/icons/risk.svg">
-
-        <span>Risks</span>
-
-    </div>
-
-    <div class="chip-container">
-
-        ${renderChips(agent.risks)}
-
-    </div>
-
-</div>
-
-<hr class="panel-divider">
-
-<div class="grc-section">
-
-    <div class="grc-section-title">
-
-        <img src="assets/icons/guardrails.svg">
-
-        <span>Guardrails</span>
-
-    </div>
-
-    <div class="chip-container">
-
-        ${renderChips(agent.guardrails)}
-
-    </div>
-
-</div>
-
-<hr class="panel-divider">
-
-<div class="grc-section">
-
-    <div class="grc-section-title">
-
-        <img src="assets/icons/industry-references.svg">
-
-        <span>Industry References</span>
-
-    </div>
-
-    <div class="chip-container">
-
-        ${renderChips(agent.industryReferences)}
-
-    </div>
-
-</div>
-
-</div>
     `;
 
 }
+
 
 function renderGeneratedProfile(agent) {
 
     return `
 
+        <div id="grcContent">
+
+            <div class="grc-section">
+
+                <div class="grc-section-title">
+
+                    <img src="assets/icons/governance.svg">
+
+                    <span>Governance</span>
+
+                </div>
+
+                <div class="chip-container">
+
+                    ${agent.governance.map(item => `
+
+                        <div class="grc-chip">
+
+                            ✓ ${item.title}
+
+                            <br>
+
+                            <span class="business-rationale">
+
+                                Business Rationale:
+                                ${item.businessRationale}
+
+                            </span>
+
+                        </div>
+
+                    `).join("")}
+
+                </div>
+
+            </div>
+
+            <hr class="panel-divider">
+
+            <div class="grc-section">
+
+                <div class="grc-section-title">
+
+                    <img src="assets/icons/risk.svg">
+
+                    <span>Risks</span>
+
+                </div>
+
+                <div class="chip-container">
+
+                    ${renderChips(agent.risks)}
+
+                </div>
+
+            </div>
+
+            <hr class="panel-divider">
+
+            <div class="grc-section">
+
+                <div class="grc-section-title">
+
+                    <img src="assets/icons/guardrails.svg">
+
+                    <span>Guardrails</span>
+
+                </div>
+
+                <div class="chip-container">
+
+                    ${renderChips(agent.guardrails)}
+
+                </div>
+
+            </div>
+
+            <hr class="panel-divider">
+
+            <div class="grc-section">
+
+                <div class="grc-section-title">
+
+                    <img src="assets/icons/industry-references.svg">
+
+                    <span>Industry References</span>
+
+                </div>
+
+                <div class="chip-container">
+
+                    ${renderChips(agent.industryReferences)}
+
+                </div>
+
+            </div>
+
+        </div>
+
     `;
 
 }
-
 
 // --------------------------------------------
 // Home
