@@ -663,7 +663,7 @@ function showAuthorization(button) {
 // --------------------------------------------
 
 function buildGRCProfile() {
-      
+
     document.getElementById("grcHeader").innerHTML = `
 
         <div class="grc-action">
@@ -680,8 +680,12 @@ function buildGRCProfile() {
 
     `;
 
-    document.getElementById("grcContent").style.display = "none";
-    
+    const agent =
+        customerRegistrationAgentRegistry.identityVerificationAgent;
+
+    document.getElementById("grcPanel").innerHTML +=
+        renderGeneratedProfile(agent);
+
 }
 
 
