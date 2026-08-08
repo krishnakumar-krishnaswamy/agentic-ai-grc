@@ -440,6 +440,12 @@ body {
 
 }
 
+.generate-grc-btn:hover {
+
+    background: #f5f5f5;
+
+}
+
 /* ---------- GRC Section ---------- */
 
 .grc-section-title {
