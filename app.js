@@ -664,6 +664,8 @@ function showAuthorization(button) {
 
 function buildGRCProfile() {
 
+    let dots = 1;
+
     document.getElementById("grcHeader").innerHTML = `
 
         <div class="grc-action">
@@ -672,7 +674,9 @@ function buildGRCProfile() {
 
                 <img src="assets/icons/building-grc.svg">
 
-                <span>Building GRC Profile...</span>
+                <span id="buildingStatus">
+                    Building GRC Profile.
+                </span>
 
             </div>
 
@@ -680,15 +684,42 @@ function buildGRCProfile() {
 
     `;
 
-    const agent =
-        customerRegistrationAgentRegistry.identityVerificationAgent;
+    const buildTimer = setInterval(() => {
 
-    document.getElementById("grcPanel").innerHTML +=
-        renderGeneratedProfile(agent);
+        dots++;
+
+        document.getElementById("buildingStatus").textContent =
+            "Building GRC Profile" + ".".repeat(dots);
+
+        if (dots === 5) {
+
+            clearInterval(buildTimer);
+
+            document.getElementById("grcHeader").innerHTML = `
+
+                <div class="panel-title">
+
+                    <img src="assets/icons/grc.svg">
+
+                    <span>GRC</span>
+
+                </div>
+
+                <hr class="panel-divider">
+
+            `;
+
+            const agent =
+                customerRegistrationAgentRegistry.identityVerificationAgent;
+
+            document.getElementById("grcPanel").innerHTML +=
+                renderGeneratedProfile(agent);
+
+        }
+
+    }, 300);
 
 }
-
-
 // --------------------------------------------
 // Default Landing Page
 // --------------------------------------------
