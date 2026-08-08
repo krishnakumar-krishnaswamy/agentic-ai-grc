@@ -438,6 +438,8 @@ body {
 
     margin-bottom: 14px;
 
+    cursor: pointer;
+
 }
 
 .generate-grc-btn:hover {
