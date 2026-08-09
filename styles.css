@@ -466,6 +466,12 @@ body {
 
 }
 
+.build-grc-text {
+
+    transform: translateY(-5px);
+
+}
+
 /* ---------- GRC Section ---------- */
 
 .grc-section-title {
