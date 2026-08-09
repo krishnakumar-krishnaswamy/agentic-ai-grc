@@ -290,7 +290,7 @@ function renderGRC(agent) {
                 class="panel-title generate-grc-btn"
                 onclick="buildGRCProfile()">
 
-                <span>▶ Build GRC Profile</span>
+                <span class="build-grc-text">▶ Build GRC Profile</span>
 
             </div>
 
