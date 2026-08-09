@@ -666,17 +666,17 @@ function buildGRCProfile() {
 
     document.getElementById("grcHeader").innerHTML = `
 
-        <div class="grc-action">
+        <div class="panel-title">
 
-            <div class="generate-grc-btn">
+            <img src="assets/icons/building-grc.svg">
 
-                <img src="assets/icons/building-grc.svg">
+            <span
+                class="generate-grc-btn"
+                id="buildingStatus">
 
-                <span id="buildingStatus">
-                    Building GRC Profile.
-                </span>
+                Building GRC Profile.
 
-            </div>
+            </span>
 
         </div>
 
