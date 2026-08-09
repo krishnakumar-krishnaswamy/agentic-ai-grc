@@ -446,11 +446,13 @@ body {
 
 .generate-grc-btn {
 
-   display: inline-flex;  
-
     margin-bottom: 14px;
 
     cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
 
     padding: 10px 12px;
 
