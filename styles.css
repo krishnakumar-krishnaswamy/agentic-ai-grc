@@ -434,6 +434,16 @@ body {
 
 }
 
+.grc-action {
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+}
+
 .generate-grc-btn {
 
     display: inline-flex;
