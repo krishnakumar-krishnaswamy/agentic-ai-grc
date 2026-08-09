@@ -288,8 +288,6 @@ function renderGRC(agent) {
 
     <div class="panel-title">
 
-        <img src="assets/icons/building-grc.svg">
-
         <span
             class="generate-grc-btn"
             onclick="buildGRCProfile()">
