@@ -446,9 +446,9 @@ body {
 
 .generate-grc-btn {
 
-    display: inline-flex;
+/*    display: inline-flex;  */
 
-    margin-bottom: 0;
+    margin-bottom: 14px;
 
     cursor: pointer;
 
