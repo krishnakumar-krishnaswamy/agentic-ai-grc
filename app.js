@@ -448,53 +448,6 @@ function showHome(button) {
 
 }
 
-
-// --------------------------------------------
-// Agentic AI GRC
-// --------------------------------------------
-/*
-function showAgenticGRC(button) {
-
-    setActiveMenu(button);
-
-    renderCard(
-
-        "Agentic AI GRC Pilot",
-
-        `
-        <br>
-
-        <p>
-
-        <strong>Problem Statement</strong><br>
-
-        As autonomous AI agents increasingly interact with enterprise systems, governing the AI agent itself becomes an important consideration alongside application, security, and data governance.
-
-        </p>
-
-        <br>
-
-        <p>
-
-        <strong>Solution</strong><br>
-
-        This pilot develops a lightweight governance reference model for autonomous AI agents using Customer Identity and Access Management (CIAM) as the reference domain.
-
-        <br><br>
-
-        Each AI agent is modeled as an independently governed entity with mappings to enterprise systems, governance controls, risks, compliance obligations, guardrails, and relevant industry standards.
-
-        </p>
-
-        `
-
-    );
-
-}
-
-*/
-
-
 // --------------------------------------------
 // Customer Registration Agent
 // --------------------------------------------
