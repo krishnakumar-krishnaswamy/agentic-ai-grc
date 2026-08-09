@@ -299,9 +299,7 @@ function renderGRC(agent) {
             </div>
 
         </div>
-
-        <hr class="panel-divider">
-
+        
     `;
 
 }
