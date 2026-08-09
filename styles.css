@@ -434,12 +434,6 @@ body {
 
 }
 
-.grc-panel > #grcHeader {
-
-    height: 36px;
-
-}
-
 .grc-action {
 
     height: 36px;
@@ -452,7 +446,7 @@ body {
 
 .generate-grc-btn {
 
-    margin-bottom: 0;
+    margin-bottom: 14px;
 
     cursor: pointer;
 
