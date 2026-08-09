@@ -286,20 +286,16 @@ function renderGRC(agent) {
 
         <div id="grcHeader">
 
-    <div class="panel-title">
+            <div
+                class="panel-title generate-grc-btn"
+                onclick="buildGRCProfile()">
 
-        <span
-            class="generate-grc-btn"
-            onclick="buildGRCProfile()">
+                <span>▶ Build GRC Profile</span>
 
-            ▶ Build GRC Profile
+            </div>
 
-        </span>
+        </div>
 
-    </div>
-
-</div>
-        
     `;
 
 }
@@ -666,21 +662,19 @@ function buildGRCProfile() {
 
     document.getElementById("grcHeader").innerHTML = `
 
-        <div class="panel-title">
+    <div class="panel-title">
 
-            <img src="assets/icons/building-grc.svg">
+        <img src="assets/icons/building-grc.svg">
 
-            <span
-                class="generate-grc-btn"
-                id="buildingStatus">
+        <span id="buildingStatus">
 
-                Building GRC Profile.
+            Building GRC Profile.
 
-            </span>
+        </span>
 
-        </div>
+    </div>
 
-    `;
+`;
 
     const buildTimer = setInterval(() => {
 
