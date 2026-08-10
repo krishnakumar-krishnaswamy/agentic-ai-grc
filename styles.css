@@ -452,13 +452,6 @@ body {
 
     display: inline-flex;
 
-    /*
-    cursor: pointer;
-
-    display: flex;
-
-    align-items: center;
-
     gap: 8px;
 
     padding: 0 10px;
@@ -466,6 +459,14 @@ body {
     border-radius: 8px;
 
     box-sizing: border-box;
+
+    /*
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+    
     */
     
 }
