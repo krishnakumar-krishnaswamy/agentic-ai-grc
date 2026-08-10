@@ -450,6 +450,8 @@ body {
     
     margin-bottom: 14px;
 
+    display: inline-flex;
+
     /*
     cursor: pointer;
 
