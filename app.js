@@ -286,13 +286,12 @@ function renderGRC(agent) {
 
         <div id="grcHeader">
 
-            <div
-                class="panel-title generate-grc-btn"
-                onclick="buildGRCProfile()">
+            <button class="agent-item generate-grc-btn"
+        onclick="buildGRCProfile()">
 
-                <span class="build-grc-text">▶ Build GRC Profile</span>
+    <span class="build-grc-text">▶ Build GRC Profile</span>
 
-            </div>
+</button>
 
         </div>
 
