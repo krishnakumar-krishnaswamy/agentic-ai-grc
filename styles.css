@@ -450,25 +450,24 @@ body {
 
     cursor: pointer;
 
-    display: inline-flex;
+    display: flex;
 
     align-items: center;
 
-    padding: 10px 12px;
+    gap: 8px;
+
+    min-height: 40px;
+
+    padding: 0 10px;
 
     border-radius: 8px;
 
+    box-sizing: border-box;
 }
 
 .generate-grc-btn:hover {
 
     background: #f5f5f5;
-
-}
-
-.build-grc-text {
-
-    transform: translateY(-6px);
 
 }
 
