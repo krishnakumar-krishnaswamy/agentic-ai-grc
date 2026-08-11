@@ -1294,6 +1294,21 @@ function showAuthentication(button) {
     `;
 }
 
+// --------------------------------------------
+// Trusted Authentication Agent Selection
+// --------------------------------------------
+
+function selectTrustedAuthenticationAgent(agentKey, selectedButton) {
+
+    document
+        .querySelectorAll(".agent-panel .agent-item")
+        .forEach(button => {
+            button.classList.remove("active");
+        });
+
+    selectedButton.classList.add("active");
+}
+
 
 // ============================================
 // Customer Authentication Agent Registry
