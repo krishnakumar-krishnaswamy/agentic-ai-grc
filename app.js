@@ -1495,8 +1495,23 @@ function buildGRCProfile() {
 
             `;
 
-            const agent =
-    customerRegistrationAgentRegistry[selectedTrustedAgent];
+            let agent;
+
+if (
+    document
+        .querySelector(".center-card")
+        .classList.contains("authentication-card")
+) {
+
+    agent =
+        customerAuthenticationAgentRegistry[selectedAuthenticationAgent];
+
+} else {
+
+    agent =
+        customerRegistrationAgentRegistry[selectedTrustedAgent];
+
+}
 
             document.getElementById("grcPanel").innerHTML +=
                 renderGeneratedProfile(agent);
