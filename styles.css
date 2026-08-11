@@ -364,6 +364,15 @@ body {
     transform: translateX(190px);
 }
 
+/* Keep the Trusted AI Agent panel at its original width
+   when the generated GRC card expands.
+   The additional horizontal space is given to the GRC panel. */
+
+.center-card.grc-generated .agent-panel {
+    width: 262px;
+    flex: 0 0 262px;
+}
+
 
 /* ---------- Card Header ---------- */
 
