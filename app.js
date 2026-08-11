@@ -1314,7 +1314,7 @@ let selectedAuthenticationAgent = "loginAgent";
 function selectTrustedAuthenticationAgent(agentKey, selectedButton) {
 
     selectedAuthenticationAgent = agentKey;
-    
+
     document
         .querySelectorAll(".agent-panel .agent-item")
         .forEach(button => {
@@ -1323,16 +1323,20 @@ function selectTrustedAuthenticationAgent(agentKey, selectedButton) {
 
     selectedButton.classList.add("active");
 
-    const agent =
-        customerAuthenticationAgentRegistry[agentKey];
+    // Reset GRC area for the newly selected Authentication Agent
+    document.getElementById("grcPanel").innerHTML = `
 
-    document.getElementById("authenticationGrcPanel").innerHTML = `
+        <div id="grcHeader">
 
-        <span class="generate-grc-btn">
+            <span
+                class="generate-grc-btn"
+                onclick="buildGRCProfile()">
 
-            ▶ Build GRC Profile
+                ▶ Build GRC Profile
 
-        </span>
+            </span>
+
+        </div>
 
     `;
 }
