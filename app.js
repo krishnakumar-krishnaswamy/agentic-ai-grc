@@ -372,17 +372,17 @@ function renderGRC(agent) {
 
     return `
 
-<div class="panel-title">
+        <div id="grcHeader">
 
-    <span
-        class="generate-grc-btn"
-        onclick="buildGRCProfile()">
+            <span
+                class="generate-grc-btn"
+                onclick="buildGRCProfile()">
 
-        ▶ Build GRC Profile
+                ▶ Build GRC Profile
 
-    </span>
+            </span>
 
-</div>
+        </div>
 
     `;
 
