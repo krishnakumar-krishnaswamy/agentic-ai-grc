@@ -1175,14 +1175,123 @@ function showAuthentication(button) {
 
     setActiveMenu(button);
 
-    renderCard(
+    const container =
+        document.getElementById("contentCard");
 
-        "Customer Authentication Agent",
+    container.innerHTML = `
 
-        "Pilot implementation coming soon."
+    <div class="center-card">
 
-    );
+        <div class="card-header">
 
+            <img src="assets/icons/authentication.svg">
+
+            <span>Customer Authentication Agent</span>
+
+        </div>
+
+        <div class="card-description">
+
+            Autonomous AI agent responsible for customer authentication.
+
+        </div>
+
+        <hr class="card-divider">
+
+        <div class="agent-layout">
+
+            <div class="agent-panel">
+
+                <div class="panel-title">
+
+                    <img src="assets/icons/trusted-agents.svg">
+
+                    <span>Trusted AI Agent Interactions</span>
+
+                </div>
+
+                <hr class="panel-divider">
+
+                <button
+                    class="agent-item active"
+                    onclick="selectTrustedAuthenticationAgent('loginAgent', this)">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>Login Agent</span>
+
+                </button>
+
+                <button
+                    class="agent-item"
+                    onclick="selectTrustedAuthenticationAgent('mfaAgent', this)">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>MFA Agent</span>
+
+                </button>
+
+                <button
+                    class="agent-item"
+                    onclick="selectTrustedAuthenticationAgent('ssoAgent', this)">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>SSO Agent</span>
+
+                </button>
+
+                <button
+                    class="agent-item"
+                    onclick="selectTrustedAuthenticationAgent('forgotPasswordAgent', this)">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>Forgot Username / Password Agent</span>
+
+                </button>
+
+                <button
+                    class="agent-item"
+                    onclick="selectTrustedAuthenticationAgent('logoutAgent', this)">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>Logout Agent</span>
+
+                </button>
+
+                <button
+                    class="agent-item"
+                    onclick="selectTrustedAuthenticationAgent('passwordExpirationAgent', this)">
+
+                    <img src="assets/icons/agent.svg">
+
+                    <span>Password Expiration Agent</span>
+
+                </button>
+
+            </div>
+
+
+            <div
+                class="grc-panel"
+                id="authenticationGrcPanel">
+
+                <span class="generate-grc-btn">
+
+                    ▶ Build GRC Profile
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    `;
 }
 
 
