@@ -1244,11 +1244,11 @@ function showAuthentication(button) {
 
                 <button
                     class="agent-item"
-                    onclick="selectTrustedAuthenticationAgent('forgotPasswordAgent', this)">
+                    onclick="selectTrustedAuthenticationAgent('accountRecoveryAgent', this)">
 
                     <img src="assets/icons/agent.svg">
 
-                    <span>Forgot Username / Password Agent</span>
+                    <span>Account Recovery Agent</span>
 
                 </button>
 
@@ -1352,17 +1352,17 @@ const customerAuthenticationAgentRegistry = {
 
     },
 
-    forgotPasswordAgent: {
+    accountRecoveryAgent: {
 
-        name: "Forgot Username / Password Agent",
+    name: "Account Recovery Agent",
 
-        governance: [],
-        risks: [],
-        compliance: [],
-        guardrails: [],
-        industryReferences: []
+    governance: [],
+    risks: [],
+    compliance: [],
+    guardrails: [],
+    industryReferences: []
 
-    },
+},
 
     logoutAgent: {
 
