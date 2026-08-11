@@ -234,6 +234,8 @@ function setActiveMenu(selectedButton) {
 
 function selectTrustedAgent(agentKey, selectedButton) {
 
+    selectedTrustedAgent = agentKey;
+    
     document
         .querySelectorAll(".agent-item")
         .forEach(button => {
