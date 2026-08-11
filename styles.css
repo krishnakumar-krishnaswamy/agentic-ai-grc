@@ -434,6 +434,20 @@ body {
 
 }
 
+/* ---------- Generated GRC Content ---------- */
+/*
+   Scroll only the generated GRC profile content.
+   The scrollbars appear only when the GRC output exceeds
+   the available height or width. The parent .grc-panel
+   remains unchanged.
+*/
+
+#grcContent {
+    max-height: 320px;
+    overflow: auto;
+}
+
+
 .grc-action {
 
     height: 36px;
