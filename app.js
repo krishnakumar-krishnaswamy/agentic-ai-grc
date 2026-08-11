@@ -1664,15 +1664,160 @@ const customerAuthenticationAgentRegistry = {
 
     ssoAgent: {
 
-        name: "SSO Agent",
+    name: "SSO Agent",
 
-        governance: [],
-        risks: [],
-        compliance: [],
-        guardrails: [],
-        industryReferences: []
+    governance: [
 
-    },
+        {
+            title: "Agent Governance",
+
+            businessRationale:
+                "Establishes accountable governance for the autonomous SSO Agent.",
+
+            guardrail:
+                "Requires defined ownership, operating boundaries, and accountability.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Agent Autonomy Governance",
+
+            businessRationale:
+                "Defines the approved level of autonomy for the SSO Agent.",
+
+            guardrail:
+                "Requires documented autonomy boundaries, escalation conditions, and human oversight.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Agent Lifecycle Governance",
+
+            businessRationale:
+                "Ensures the SSO Agent remains governed throughout its operational lifecycle.",
+
+            guardrail:
+                "Requires controlled approval, monitoring, modification, suspension, and retirement.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    risks: [
+
+        {
+            title: "Uncontrolled Agent Behavior",
+
+            businessRationale:
+                "Reduces the risk of the SSO Agent operating outside approved boundaries.",
+
+            guardrail:
+                "Requires monitoring and controls to detect and contain unexpected agent behavior.",
+
+            industryReference:
+                "NIST AI RMF — Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Inappropriate Autonomous Decisions",
+
+            businessRationale:
+                "Reduces the risk of the agent making decisions beyond its approved authority.",
+
+            guardrail:
+                "Requires defined decision boundaries, escalation rules, and human oversight.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Insufficient Agent Accountability",
+
+            businessRationale:
+                "Reduces the risk of unclear responsibility for the agent's actions and outcomes.",
+
+            guardrail:
+                "Requires identifiable ownership, decision traceability, monitoring, and accountability.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    compliance: [
+
+        {
+            title: "AI Governance Compliance",
+
+            businessRationale:
+                "Aligns the SSO Agent with the organization's established AI governance framework.",
+
+            guardrail:
+                "Requires documented governance controls, ownership, monitoring, and evidence.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "AI Accountability Compliance",
+
+            businessRationale:
+                "Establishes clear responsibility for the SSO Agent's behavior and decisions.",
+
+            guardrail:
+                "Requires accountable ownership, documented responsibilities, oversight, and audit evidence.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "AI Risk Management Compliance",
+
+            businessRationale:
+                "Ensures risks associated with the SSO Agent are identified, assessed, monitored, and managed.",
+
+            guardrail:
+                "Requires documented AI risk assessment, treatment, monitoring, and periodic review.",
+
+            industryReference:
+                "NIST AI RMF — Manage; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    guardrails: [
+
+        "Approved Autonomy Boundaries",
+
+        "Human Oversight",
+
+        "Agent Behavior Monitoring",
+
+        "Decision Traceability"
+
+    ],
+
+    industryReferences: [
+
+        "NIST AI RMF — Govern",
+
+        "NIST AI RMF — Manage",
+
+        "ISO/IEC 42001 — AI management system"
+
+    ]
+
+},
 
     accountRecoveryAgent: {
 
