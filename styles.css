@@ -353,11 +353,15 @@ body {
 /* ---------- Generated GRC Card ---------- */
 /*
    Expand the card only after the GRC profile is generated.
-   Normal .center-card layout remains unchanged.
+   The card normally uses 620px and expands to 1000px.
+   The additional 380px is split equally by the centered layout,
+   so translateX(190px) offsets the 190px left-side expansion
+   and keeps the original left edge approximately fixed.
 */
 
 .center-card.grc-generated {
-    width: 900px;
+    width: 1000px;
+    transform: translateX(190px);
 }
 
 
