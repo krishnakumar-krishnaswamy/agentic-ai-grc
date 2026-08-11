@@ -1307,6 +1307,19 @@ function selectTrustedAuthenticationAgent(agentKey, selectedButton) {
         });
 
     selectedButton.classList.add("active");
+
+    const agent =
+        customerAuthenticationAgentRegistry[agentKey];
+
+    document.getElementById("authenticationGrcPanel").innerHTML = `
+
+        <span class="generate-grc-btn">
+
+            ▶ Build GRC Profile
+
+        </span>
+
+    `;
 }
 
 
