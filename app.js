@@ -1180,7 +1180,7 @@ function showAuthentication(button) {
 
     container.innerHTML = `
 
-    <div class="center-card">
+    <div class="center-card authentication-card">
 
         <div class="card-header">
 
