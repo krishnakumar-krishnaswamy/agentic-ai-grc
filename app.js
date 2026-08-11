@@ -822,7 +822,7 @@ function buildGRCProfile() {
             `;
 
             const agent =
-                customerRegistrationAgentRegistry.identityVerificationAgent;
+    customerRegistrationAgentRegistry[selectedTrustedAgent];
 
             document.getElementById("grcPanel").innerHTML +=
                 renderGeneratedProfile(agent);
