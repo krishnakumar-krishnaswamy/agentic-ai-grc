@@ -484,23 +484,165 @@ const customerRegistrationAgentRegistry = {
 
 },
     
-    
+
 
     notificationAgent: {
 
-        name: "Notification Agent",
+    name: "Notification Agent",
 
-        governance: [],
+    governance: [
 
-        risks: [],
+        {
+            title: "Notification Governance",
 
-        guardrails: [],
+            businessRationale:
+                "Establishes accountable governance for AI-driven customer notifications.",
 
-        industryReferences: []
+            guardrail:
+                "Requires defined ownership, approved notification policies, and controlled delivery.",
 
-    }
+            industryReference:
+                "ISO/IEC 42001 — AI management system; NIST AI RMF — Govern."
+        },
 
-};
+        {
+            title: "Notification Policy Governance",
+
+            businessRationale:
+                "Ensures notifications follow approved business and communication policies.",
+
+            guardrail:
+                "Requires notification content, purpose, and delivery to follow approved policies.",
+
+            industryReference:
+                "ISO/IEC 42001 — AI governance; ISO/IEC 27001."
+        },
+
+        {
+            title: "Notification Decision Accountability",
+
+            businessRationale:
+                "Establishes accountability for automated notification decisions.",
+
+            guardrail:
+                "Requires notification decisions to be attributable to authorized actors or systems.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001."
+        }
+
+    ],
+
+    risks: [
+
+        {
+            title: "Unauthorized Notification",
+
+            businessRationale:
+                "Prevents unauthorized customer communications.",
+
+            guardrail:
+                "Requires authenticated and authorized notification requests.",
+
+            industryReference:
+                "NIST SP 800-53 — Access Control; ISO/IEC 27001."
+        },
+
+        {
+            title: "Incorrect Notification",
+
+            businessRationale:
+                "Reduces delivery of inaccurate or inappropriate customer messages.",
+
+            guardrail:
+                "Requires notification content and recipient context to be validated before delivery.",
+
+            industryReference:
+                "NIST AI RMF — Manage; ISO/IEC 42001."
+        },
+
+        {
+            title: "Notification Data Exposure",
+
+            businessRationale:
+                "Reduces exposure of customer information through notifications.",
+
+            guardrail:
+                "Limits notification content to authorized data and approved communication purposes.",
+
+            industryReference:
+                "ISO/IEC 27001 — Information security; NIST SP 800-53."
+        }
+
+    ],
+
+    compliance: [
+
+        {
+            title: "Notification Governance Compliance",
+
+            businessRationale:
+                "Aligns AI-driven notifications with enterprise governance obligations.",
+
+            guardrail:
+                "Requires documented ownership, controls, and compliance evidence.",
+
+            industryReference:
+                "ISO/IEC 42001; applicable communication requirements."
+        },
+
+        {
+            title: "Privacy and Notification Protection",
+
+            businessRationale:
+                "Protects customer information included in notifications.",
+
+            guardrail:
+                "Requires notification data to be protected during preparation and delivery.",
+
+            industryReference:
+                "ISO/IEC 27001; NIST SP 800-53 — Security and Privacy Controls."
+        },
+
+        {
+            title: "Notification Retention Compliance",
+
+            businessRationale:
+                "Ensures notification records follow approved retention requirements.",
+
+            guardrail:
+                "Requires notification records to follow approved retention and deletion policies.",
+
+            industryReference:
+                "ISO/IEC 27001; applicable privacy and records requirements."
+        }
+
+    ],
+
+    guardrails: [
+
+        "Notification Authorization Validation",
+
+        "Notification Content Validation",
+
+        "Notification Audit Logging"
+
+    ],
+
+    industryReferences: [
+
+        "NIST AI RMF",
+
+        "ISO/IEC 42001",
+
+        "ISO/IEC 27001",
+
+        "NIST SP 800-53"
+
+    ]
+
+}; 
+    
 
 let selectedTrustedAgent = "identityVerificationAgent";
 
