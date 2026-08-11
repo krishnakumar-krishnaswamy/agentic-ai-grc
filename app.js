@@ -1301,11 +1301,20 @@ function showAuthentication(button) {
 }
 
 // --------------------------------------------
+// Selected Authentication Agent
+// --------------------------------------------
+
+let selectedAuthenticationAgent = "loginAgent";
+
+
+// --------------------------------------------
 // Trusted Authentication Agent Selection
 // --------------------------------------------
 
 function selectTrustedAuthenticationAgent(agentKey, selectedButton) {
 
+    selectedAuthenticationAgent = agentKey;
+    
     document
         .querySelectorAll(".agent-panel .agent-item")
         .forEach(button => {
