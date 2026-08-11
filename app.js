@@ -1346,15 +1346,160 @@ const customerAuthenticationAgentRegistry = {
 
     loginAgent: {
 
-        name: "Login Agent",
+    name: "Login Agent",
 
-        governance: [],
-        risks: [],
-        compliance: [],
-        guardrails: [],
-        industryReferences: []
+    governance: [
 
-    },
+        {
+            title: "Agent Governance",
+
+            businessRationale:
+                "Establishes accountable ownership and oversight for the autonomous Login Agent.",
+
+            guardrail:
+                "Requires defined ownership, approved operating boundaries, and documented accountability.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Agent Lifecycle Governance",
+
+            businessRationale:
+                "Ensures the Login Agent remains governed throughout its AI lifecycle.",
+
+            guardrail:
+                "Requires controlled approval, monitoring, modification, suspension, and retirement of the agent.",
+
+            industryReference:
+                "ISO/IEC 42001 — AI management system; NIST AI RMF — Govern and Manage."
+        },
+
+        {
+            title: "Autonomy Governance",
+
+            businessRationale:
+                "Defines the level of autonomy permitted for the Login Agent and establishes human accountability.",
+
+            guardrail:
+                "Requires approved autonomy boundaries, escalation conditions, and human oversight for defined exceptions.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001."
+        }
+
+    ],
+
+    risks: [
+
+        {
+            title: "Uncontrolled Agent Behavior",
+
+            businessRationale:
+                "Reduces the risk of the autonomous agent behaving outside its approved operating boundaries.",
+
+            guardrail:
+                "Requires continuous monitoring and defined controls for detecting and containing unexpected agent behavior.",
+
+            industryReference:
+                "NIST AI RMF — Manage; ISO/IEC 42001."
+        },
+
+        {
+            title: "Inappropriate Autonomous Decisions",
+
+            businessRationale:
+                "Reduces the risk of the agent making decisions that exceed its approved authority.",
+
+            guardrail:
+                "Requires defined decision boundaries, escalation rules, and human oversight where required.",
+
+            industryReference:
+                "NIST AI RMF — Manage; NIST AI RMF — Govern."
+        },
+
+        {
+            title: "Insufficient Agent Accountability",
+
+            businessRationale:
+                "Reduces the risk of unclear responsibility for the Login Agent's actions and outcomes.",
+
+            guardrail:
+                "Requires identifiable ownership, decision traceability, monitoring, and documented accountability.",
+
+            industryReference:
+                "ISO/IEC 42001 — AI management system; NIST AI RMF — Govern."
+        }
+
+    ],
+
+    compliance: [
+
+        {
+            title: "AI Governance Compliance",
+
+            businessRationale:
+                "Ensures the Login Agent operates within the organization's established AI governance framework.",
+
+            guardrail:
+                "Requires documented governance controls, ownership, monitoring, and evidence for the agent.",
+
+            industryReference:
+                "ISO/IEC 42001; NIST AI RMF."
+        },
+
+        {
+            title: "AI Accountability Compliance",
+
+            businessRationale:
+                "Ensures responsibility for the agent's behavior and decisions is clearly established.",
+
+            guardrail:
+                "Requires accountable owners, documented responsibilities, oversight, and audit evidence.",
+
+            industryReference:
+                "ISO/IEC 42001; NIST AI RMF — Govern."
+        },
+
+        {
+            title: "AI Risk Management Compliance",
+
+            businessRationale:
+                "Ensures risks arising from the Login Agent are identified, assessed, monitored, and managed.",
+
+            guardrail:
+                "Requires documented AI risk assessment, treatment, monitoring, and periodic review.",
+
+            industryReference:
+                "NIST AI RMF; ISO/IEC 42001."
+        }
+
+    ],
+
+    guardrails: [
+
+        "Approved Autonomy Boundaries",
+
+        "Human Oversight and Escalation",
+
+        "Agent Activity Monitoring",
+
+        "Decision Traceability"
+
+    ],
+
+    industryReferences: [
+
+        "NIST AI RMF",
+
+        "ISO/IEC 42001",
+
+        "ISO/IEC 27001"
+
+    ]
+
+},
 
     mfaAgent: {
 
