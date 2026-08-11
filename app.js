@@ -1978,15 +1978,160 @@ const customerAuthenticationAgentRegistry = {
 
     logoutAgent: {
 
-        name: "Logout Agent",
+    name: "Logout Agent",
 
-        governance: [],
-        risks: [],
-        compliance: [],
-        guardrails: [],
-        industryReferences: []
+    governance: [
 
-    },
+        {
+            title: "Agent Governance",
+
+            businessRationale:
+                "Establishes accountable governance for the autonomous Logout Agent.",
+
+            guardrail:
+                "Requires defined ownership, operating boundaries, and accountability.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Agent Autonomy Governance",
+
+            businessRationale:
+                "Defines the approved level of autonomy for the Logout Agent.",
+
+            guardrail:
+                "Requires documented autonomy boundaries, escalation conditions, and human oversight.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Agent Lifecycle Governance",
+
+            businessRationale:
+                "Ensures the Logout Agent remains governed throughout its operational lifecycle.",
+
+            guardrail:
+                "Requires controlled approval, monitoring, modification, suspension, and retirement.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    risks: [
+
+        {
+            title: "Uncontrolled Agent Behavior",
+
+            businessRationale:
+                "Reduces the risk of the Logout Agent operating outside approved boundaries.",
+
+            guardrail:
+                "Requires monitoring and controls to detect and contain unexpected agent behavior.",
+
+            industryReference:
+                "NIST AI RMF — Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Inappropriate Autonomous Decisions",
+
+            businessRationale:
+                "Reduces the risk of the agent making decisions beyond its approved authority.",
+
+            guardrail:
+                "Requires defined decision boundaries, escalation rules, and human oversight.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Insufficient Agent Accountability",
+
+            businessRationale:
+                "Reduces the risk of unclear responsibility for the agent's actions and outcomes.",
+
+            guardrail:
+                "Requires identifiable ownership, decision traceability, monitoring, and accountability.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    compliance: [
+
+        {
+            title: "AI Governance Compliance",
+
+            businessRationale:
+                "Aligns the Logout Agent with the organization's established AI governance framework.",
+
+            guardrail:
+                "Requires documented governance controls, ownership, monitoring, and evidence.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "AI Accountability Compliance",
+
+            businessRationale:
+                "Establishes clear responsibility for the Logout Agent's behavior and decisions.",
+
+            guardrail:
+                "Requires accountable ownership, documented responsibilities, oversight, and audit evidence.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "AI Risk Management Compliance",
+
+            businessRationale:
+                "Ensures risks associated with the Logout Agent are identified, assessed, monitored, and managed.",
+
+            guardrail:
+                "Requires documented AI risk assessment, treatment, monitoring, and periodic review.",
+
+            industryReference:
+                "NIST AI RMF — Manage; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    guardrails: [
+
+        "Approved Autonomy Boundaries",
+
+        "Human Oversight",
+
+        "Agent Behavior Monitoring",
+
+        "Decision Traceability"
+
+    ],
+
+    industryReferences: [
+
+        "NIST AI RMF — Govern",
+
+        "NIST AI RMF — Manage",
+
+        "ISO/IEC 42001 — AI management system"
+
+    ]
+
+},
 
     passwordExpirationAgent: {
 
