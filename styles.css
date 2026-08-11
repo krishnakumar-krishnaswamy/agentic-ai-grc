@@ -445,6 +445,7 @@ body {
 #grcContent {
     max-height: 320px;
     overflow: auto;
+    min-width: 600px;
 }
 
 
