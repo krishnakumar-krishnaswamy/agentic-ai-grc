@@ -16,34 +16,46 @@ const customerRegistrationAgentRegistry = {
     governance: [
 
     {
-
         title: "Agent Identity Management",
 
         businessRationale:
-        "Establishes trusted and accountable AI agent identity."
+            "Establishes trusted and accountable AI agent identity.",
 
+        guardrail:
+            "Requires a unique enterprise identity for every AI agent.",
+
+        industryReference:
+            "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
     },
 
     {
-
         title: "Identity Lifecycle Governance",
 
         businessRationale:
-        "Ensures AI agents remain governed throughout their operational lifecycle."
+            "Controls AI agent lifecycle under enterprise governance.",
 
+        guardrail:
+            "Requires controlled registration, modification, suspension, and retirement.",
+
+        industryReference:
+            "ISO/IEC 42001 — AI management system; ISO/IEC 27001 — Access control."
     },
 
     {
-
         title: "Authentication Governance",
 
         businessRationale:
-        "Protects enterprise services from unauthorized AI agent access."
+            "Ensures trusted and accountable AI agent interactions.",
 
+        guardrail:
+            "Requires authenticated agent-to-agent interactions before access.",
+
+        industryReference:
+            "NIST AI RMF — Govern; NIST SP 800-53 — Identification and Authentication."
     }
 
 ],
-
+        
     risks: [
 
         "Identity Fraud",
@@ -54,6 +66,49 @@ const customerRegistrationAgentRegistry = {
 
     ],
 
+   compliance: [
+
+    {
+        title: "AI Governance Compliance",
+
+        businessRationale:
+            "Aligns AI agent operation with enterprise AI governance obligations.",
+
+        guardrail:
+            "Requires documented governance ownership, controls, and evidence for the AI agent.",
+
+        industryReference:
+            "ISO/IEC 42001 — AI management system; EU AI Act — AI governance requirements."
+    },
+
+    {
+        title: "Identity Data Protection",
+
+        businessRationale:
+            "Protects customer identity information handled during verification.",
+
+        guardrail:
+            "Limits identity data access and requires protection throughout processing.",
+
+        industryReference:
+            "ISO/IEC 27001 — Information security; NIST SP 800-53 — Security and Privacy Controls."
+    },
+
+    {
+        title: "Privacy and Regulatory Compliance",
+
+        businessRationale:
+            "Ensures identity verification operates within applicable privacy obligations.",
+
+        guardrail:
+            "Requires applicable privacy, retention, and data-handling requirements to be enforced.",
+
+        industryReference:
+            "Applicable federal and state privacy regulations; PII protection requirements."
+    }
+
+],
+        
     guardrails: [
 
         "Identity Verification Validation",
