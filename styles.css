@@ -447,28 +447,13 @@ body {
 .generate-grc-btn {
 
     width: auto;
-    
+
     margin-bottom: 14px;
 
     display: inline-flex;
 
-    gap: 8px;
-
-    padding: 0 10px;
-
-    border-radius: 8px;
-
-    box-sizing: border-box;
-
-    /*
     cursor: pointer;
 
-    display: flex;
-
-    align-items: center;
-    
-    */
-    
 }
 
 .generate-grc-btn:hover {
