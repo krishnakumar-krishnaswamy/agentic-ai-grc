@@ -1184,7 +1184,7 @@ function showAuthentication(button) {
 
         <div class="card-header">
 
-            <img src="assets/icons/authentication.svg">
+            <img src="assets/icons/shield-check.svg">
 
             <span>Customer Authentication Agent</span>
 
