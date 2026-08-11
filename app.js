@@ -640,7 +640,9 @@ const customerRegistrationAgentRegistry = {
         "NIST SP 800-53"
 
     ]
-
+        }    
+    
+      
 }; 
     
 
