@@ -1295,6 +1295,88 @@ function showAuthentication(button) {
 }
 
 
+// ============================================
+// Customer Authentication Agent Registry
+// ============================================
+
+const customerAuthenticationAgentRegistry = {
+
+    loginAgent: {
+
+        name: "Login Agent",
+
+        governance: [],
+        risks: [],
+        compliance: [],
+        guardrails: [],
+        industryReferences: []
+
+    },
+
+    mfaAgent: {
+
+        name: "MFA Agent",
+
+        governance: [],
+        risks: [],
+        compliance: [],
+        guardrails: [],
+        industryReferences: []
+
+    },
+
+    ssoAgent: {
+
+        name: "SSO Agent",
+
+        governance: [],
+        risks: [],
+        compliance: [],
+        guardrails: [],
+        industryReferences: []
+
+    },
+
+    forgotPasswordAgent: {
+
+        name: "Forgot Username / Password Agent",
+
+        governance: [],
+        risks: [],
+        compliance: [],
+        guardrails: [],
+        industryReferences: []
+
+    },
+
+    logoutAgent: {
+
+        name: "Logout Agent",
+
+        governance: [],
+        risks: [],
+        compliance: [],
+        guardrails: [],
+        industryReferences: []
+
+    },
+
+    passwordExpirationAgent: {
+
+        name: "Password Expiration Agent",
+
+        governance: [],
+        risks: [],
+        compliance: [],
+        guardrails: [],
+        industryReferences: []
+
+    }
+
+};
+
+
+
 
 // --------------------------------------------
 // Customer Authorization Agent
