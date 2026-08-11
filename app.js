@@ -210,6 +210,8 @@ const customerRegistrationAgentRegistry = {
 
 };
 
+let selectedTrustedAgent = "identityVerificationAgent";
+
 // --------------------------------------------
 // Navigation
 // --------------------------------------------
