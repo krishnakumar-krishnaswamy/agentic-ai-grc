@@ -56,15 +56,48 @@ const customerRegistrationAgentRegistry = {
 
 ],
         
-    risks: [
+   risks: [
 
-        "Identity Fraud",
+    {
+        title: "Identity Fraud",
 
-        "Unauthorized Identity Verification",
+        businessRationale:
+            "Reduces the risk of fraudulent identity verification decisions.",
 
-        "Identity Data Exposure"
+        guardrail:
+            "Requires identity evidence and verification signals to be validated before a decision.",
 
-    ],
+        industryReference:
+            "NIST AI RMF — Manage; NIST SP 800-53 — Identification and Authentication."
+    },
+
+    {
+        title: "Unauthorized Identity Verification",
+
+        businessRationale:
+            "Prevents unauthorized users or agents from initiating identity verification.",
+
+        guardrail:
+            "Requires authenticated and authorized requests before verification is performed.",
+
+        industryReference:
+            "NIST SP 800-53 — Access Control and Identification & Authentication; ISO/IEC 27001."
+    },
+
+    {
+        title: "Identity Data Exposure",
+
+        businessRationale:
+            "Reduces exposure of sensitive customer identity information.",
+
+        guardrail:
+            "Limits identity data access, transmission, retention, and disclosure to authorized purposes.",
+
+        industryReference:
+            "ISO/IEC 27001 — Information security controls; NIST SP 800-53 — Security and Privacy Controls."
+    }
+
+],
 
    compliance: [
 
