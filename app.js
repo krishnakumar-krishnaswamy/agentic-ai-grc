@@ -778,6 +778,10 @@ function showAuthorization(button) {
 
 function buildGRCProfile() {
 
+    document
+    .querySelector(".center-card")
+    .classList.add("grc-generated");
+    
     let dots = 1;
 
     document.getElementById("grcHeader").innerHTML = `
