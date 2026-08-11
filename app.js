@@ -1276,18 +1276,22 @@ function showAuthentication(button) {
 
 
             <div
-                class="grc-panel"
-                id="authenticationGrcPanel">
+    class="grc-panel"
+    id="grcPanel">
 
-                <span
-    class="generate-grc-btn"
-    onclick="buildGRCProfile()">
+    <div id="grcHeader">
 
-    ▶ Build GRC Profile
+        <span
+            class="generate-grc-btn"
+            onclick="buildGRCProfile()">
 
-</span>
+            ▶ Build GRC Profile
 
-            </div>
+        </span>
+
+    </div>
+
+</div>
 
         </div>
 
