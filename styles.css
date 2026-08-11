@@ -350,6 +350,17 @@ body {
 
 }
 
+/* ---------- Generated GRC Card ---------- */
+/*
+   Expand the card only after the GRC profile is generated.
+   Normal .center-card layout remains unchanged.
+*/
+
+.center-card.grc-generated {
+    width: 900px;
+}
+
+
 /* ---------- Card Header ---------- */
 
 .card-header {
