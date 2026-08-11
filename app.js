@@ -326,21 +326,165 @@ const customerRegistrationAgentRegistry = {
 },
 
 
-    
-    
+
     customerDataAgent: {
 
-        name: "Customer Data Agent",
+    name: "Customer Data Agent",
 
-        governance: [],
+    governance: [
 
-        risks: [],
+        {
+            title: "Customer Data Governance",
 
-        guardrails: [],
+            businessRationale:
+                "Establishes accountable governance for customer data handled by the AI agent.",
 
-        industryReferences: []
+            guardrail:
+                "Requires defined ownership, approved data policies, and controlled data usage.",
 
-    },
+            industryReference:
+                "ISO/IEC 42001 — AI management system; NIST AI RMF — Govern."
+        },
+
+        {
+            title: "Data Access Governance",
+
+            businessRationale:
+                "Ensures customer data access follows approved business and security requirements.",
+
+            guardrail:
+                "Requires authorized access based on identity, role, purpose, and business need.",
+
+            industryReference:
+                "ISO/IEC 27001 — Access control; NIST SP 800-53 — Access Control."
+        },
+
+        {
+            title: "Customer Data Lifecycle Governance",
+
+            businessRationale:
+                "Controls customer data throughout collection, use, retention, and disposal.",
+
+            guardrail:
+                "Requires controlled data collection, retention, modification, and deletion.",
+
+            industryReference:
+                "ISO/IEC 42001; ISO/IEC 27001 — Information security."
+        }
+
+    ],
+
+    risks: [
+
+        {
+            title: "Unauthorized Data Access",
+
+            businessRationale:
+                "Reduces unauthorized access to customer information.",
+
+            guardrail:
+                "Requires authenticated and authorized access before data retrieval.",
+
+            industryReference:
+                "NIST SP 800-53 — Access Control; ISO/IEC 27001."
+        },
+
+        {
+            title: "Customer Data Exposure",
+
+            businessRationale:
+                "Reduces exposure of sensitive customer information.",
+
+            guardrail:
+                "Limits customer data access, transmission, and disclosure to authorized purposes.",
+
+            industryReference:
+                "ISO/IEC 27001 — Information security; NIST SP 800-53."
+        },
+
+        {
+            title: "Improper Data Use",
+
+            businessRationale:
+                "Reduces use of customer data beyond approved business purposes.",
+
+            guardrail:
+                "Requires data usage to remain within approved purpose and policy boundaries.",
+
+            industryReference:
+                "NIST AI RMF — Manage; applicable privacy requirements."
+        }
+
+    ],
+
+    compliance: [
+
+        {
+            title: "Customer Data Governance Compliance",
+
+            businessRationale:
+                "Aligns customer data processing with enterprise governance obligations.",
+
+            guardrail:
+                "Requires documented ownership, controls, and compliance evidence.",
+
+            industryReference:
+                "ISO/IEC 42001; ISO/IEC 27001."
+        },
+
+        {
+            title: "Privacy and Data Protection",
+
+            businessRationale:
+                "Protects customer information throughout AI-enabled processing.",
+
+            guardrail:
+                "Requires appropriate protection throughout data collection and processing.",
+
+            industryReference:
+                "ISO/IEC 27001; NIST SP 800-53 — Security and Privacy Controls."
+        },
+
+        {
+            title: "Data Retention Compliance",
+
+            businessRationale:
+                "Ensures customer data follows approved retention requirements.",
+
+            guardrail:
+                "Requires retention, archival, and deletion to follow approved policies.",
+
+            industryReference:
+                "ISO/IEC 27001; applicable privacy and records requirements."
+        }
+
+    ],
+
+    guardrails: [
+
+        "Customer Data Access Validation",
+
+        "Data Purpose Validation",
+
+        "Customer Data Audit Logging"
+
+    ],
+
+    industryReferences: [
+
+        "NIST AI RMF",
+
+        "ISO/IEC 42001",
+
+        "ISO/IEC 27001",
+
+        "NIST SP 800-53"
+
+    ]
+
+},
+    
+    
 
     notificationAgent: {
 
