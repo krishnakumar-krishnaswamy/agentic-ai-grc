@@ -395,6 +395,8 @@ function renderGeneratedProfile(agent) {
 
         <div id="grcContent">
 
+            <!-- Governance -->
+
             <div class="grc-section">
 
                 <div class="grc-section-title">
@@ -422,6 +424,24 @@ function renderGeneratedProfile(agent) {
 
                             </span>
 
+                            <br>
+
+                            <span class="guardrail">
+
+                                Guardrail:
+                                ${item.guardrail}
+
+                            </span>
+
+                            <br>
+
+                            <span class="industry-reference">
+
+                                Industry Reference:
+                                ${item.industryReference}
+
+                            </span>
+
                         </div>
 
                     `).join("")}
@@ -430,7 +450,11 @@ function renderGeneratedProfile(agent) {
 
             </div>
 
+
             <hr class="panel-divider">
+
+
+            <!-- Risks -->
 
             <div class="grc-section">
 
@@ -444,54 +468,105 @@ function renderGeneratedProfile(agent) {
 
                 <div class="chip-container">
 
-                    ${renderChips(agent.risks)}
+                    ${agent.risks.map(item => `
+
+                        <div class="grc-chip">
+
+                            ✓ ${item.title}
+
+                            <br>
+
+                            <span class="business-rationale">
+
+                                Business Rationale:
+                                ${item.businessRationale}
+
+                            </span>
+
+                            <br>
+
+                            <span class="guardrail">
+
+                                Guardrail:
+                                ${item.guardrail}
+
+                            </span>
+
+                            <br>
+
+                            <span class="industry-reference">
+
+                                Industry Reference:
+                                ${item.industryReference}
+
+                            </span>
+
+                        </div>
+
+                    `).join("")}
 
                 </div>
 
             </div>
 
+
             <hr class="panel-divider">
+
+
+            <!-- Compliance -->
 
             <div class="grc-section">
 
                 <div class="grc-section-title">
 
-                    <img src="assets/icons/guardrails.svg">
+                    <img src="assets/icons/compliance.svg">
 
-                    <span>Guardrails</span>
-
-                </div>
-
-                <div class="chip-container">
-
-                    ${renderChips(agent.guardrails)}
-
-                </div>
-
-            </div>
-
-            <hr class="panel-divider">
-
-            <div class="grc-section">
-
-                <div class="grc-section-title">
-
-                    <img src="assets/icons/industry-references.svg">
-
-                    <span>Industry References</span>
+                    <span>Compliance</span>
 
                 </div>
 
                 <div class="chip-container">
 
-                    ${renderChips(agent.industryReferences)}
+                    ${agent.compliance.map(item => `
+
+                        <div class="grc-chip">
+
+                            ✓ ${item.title}
+
+                            <br>
+
+                            <span class="business-rationale">
+
+                                Business Rationale:
+                                ${item.businessRationale}
+
+                            </span>
+
+                            <br>
+
+                            <span class="guardrail">
+
+                                Guardrail:
+                                ${item.guardrail}
+
+                            </span>
+
+                            <br>
+
+                            <span class="industry-reference">
+
+                                Industry Reference:
+                                ${item.industryReference}
+
+                            </span>
+
+                        </div>
+
+                    `).join("")}
 
                 </div>
 
             </div>
-
-        </div>
-
     `;
 
 }
