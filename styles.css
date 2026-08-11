@@ -506,7 +506,7 @@ body {
 
 .grc-chip {
 
-    display: flex;
+    display: block;
 
     width: 100%;
 
@@ -526,7 +526,7 @@ body {
 
     color: #202123;
 
-    white-space: nowrap;
+    white-space: normal;
 
 }
 
