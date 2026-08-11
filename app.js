@@ -168,17 +168,160 @@ const customerRegistrationAgentRegistry = {
 
     consentManagementAgent: {
 
-        name: "Consent Management Agent",
+    name: "Consent Management Agent",
 
-        governance: [],
+    governance: [
 
-        risks: [],
+        {
+            title: "Consent Lifecycle Governance",
 
-        guardrails: [],
+            businessRationale:
+                "Ensures customer consent is properly established, maintained, updated, and withdrawn throughout its lifecycle.",
 
-        industryReferences: []
+            guardrail:
+                "Requires consent to be captured, recorded, modified, and withdrawn through controlled enterprise processes.",
 
-    },
+            industryReference:
+                "ISO/IEC 42001 — AI management system; NIST AI RMF — Govern."
+        },
+
+        {
+            title: "Consent Policy Governance",
+
+            businessRationale:
+                "Ensures AI agents operate according to approved enterprise consent policies and defined purposes.",
+
+            guardrail:
+                "Requires consent decisions to follow approved policies, purposes, and authorization requirements.",
+
+            industryReference:
+                "ISO/IEC 42001 — AI governance; ISO/IEC 27001 — Access control."
+        },
+
+        {
+            title: "Consent Decision Accountability",
+
+            businessRationale:
+                "Establishes accountability for automated consent decisions and actions performed by the AI agent.",
+
+            guardrail:
+                "Requires consent decisions and material changes to be attributable to the responsible agent, system, or authorized actor.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    risks: [
+
+        {
+            title: "Invalid Consent",
+
+            businessRationale:
+                "Reduces the risk of processing customer information based on incomplete, invalid, or improperly obtained consent.",
+
+            guardrail:
+                "Requires consent status and validity to be verified before a consent-dependent action is performed.",
+
+            industryReference:
+                "NIST AI RMF — Manage; privacy and consent management requirements."
+        },
+
+        {
+            title: "Unauthorized Consent Modification",
+
+            businessRationale:
+                "Prevents unauthorized users or agents from changing customer consent preferences.",
+
+            guardrail:
+                "Requires authenticated and authorized access before consent preferences can be created, changed, or withdrawn.",
+
+            industryReference:
+                "NIST SP 800-53 — Access Control and Identification & Authentication; ISO/IEC 27001."
+        },
+
+        {
+            title: "Consent Data Exposure",
+
+            businessRationale:
+                "Reduces the risk of exposing customer consent records and related personal information.",
+
+            guardrail:
+                "Limits consent data access, transmission, retention, and disclosure to authorized purposes.",
+
+            industryReference:
+                "ISO/IEC 27001 — Information security controls; NIST SP 800-53 — Security and Privacy Controls."
+        }
+
+    ],
+
+    compliance: [
+
+        {
+            title: "Consent Governance Compliance",
+
+            businessRationale:
+                "Aligns AI-driven consent management with enterprise governance and applicable regulatory obligations.",
+
+            guardrail:
+                "Requires documented ownership, approved consent policies, control requirements, and evidence of compliance.",
+
+            industryReference:
+                "ISO/IEC 42001 — AI management system; applicable privacy and consent requirements."
+        },
+
+        {
+            title: "Privacy and Consent Protection",
+
+            businessRationale:
+                "Protects customer preferences and personal information processed during consent management.",
+
+            guardrail:
+                "Requires consent information to be protected throughout collection, processing, storage, and transmission.",
+
+            industryReference:
+                "ISO/IEC 27001 — Information security; NIST SP 800-53 — Security and Privacy Controls."
+        },
+
+        {
+            title: "Consent Record Retention",
+
+            businessRationale:
+                "Ensures consent records are retained and maintained according to applicable business, legal, and regulatory requirements.",
+
+            guardrail:
+                "Requires consent records to follow approved retention, auditability, and deletion requirements.",
+
+            industryReference:
+                "ISO/IEC 27001 — Information security; applicable privacy, records retention, and regulatory requirements."
+        }
+
+    ],
+
+    guardrails: [
+
+        "Consent Status Validation",
+
+        "Consent Change Authorization",
+
+        "Consent Audit Logging"
+
+    ],
+
+    industryReferences: [
+
+        "NIST AI RMF",
+
+        "ISO/IEC 42001",
+
+        "ISO/IEC 27001",
+
+        "NIST SP 800-53"
+
+    ]
+
+},
 
     customerDataAgent: {
 
