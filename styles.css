@@ -454,6 +454,8 @@ body {
 
     cursor: pointer;
 
+    border-radius: 8px;
+
 }
 
 .generate-grc-btn:hover {
