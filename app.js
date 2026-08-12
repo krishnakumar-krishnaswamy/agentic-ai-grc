@@ -2387,6 +2387,42 @@ function showAuthorization(button) {
 
 let selectedAuthorizationAgent = "accountDeletionAgent";
 
+// --------------------------------------------
+// Trusted Authorization Agent Selection
+// --------------------------------------------
+
+function selectTrustedAuthorizationAgent(agentKey, selectedButton) {
+
+    selectedAuthorizationAgent = agentKey;
+
+    document
+        .querySelectorAll(".agent-panel .agent-item")
+        .forEach(button => {
+            button.classList.remove("active");
+        });
+
+    selectedButton.classList.add("active");
+
+    // Reset GRC area for the newly selected Authorization Agent
+    document.getElementById("grcPanel").innerHTML = `
+
+        <div id="grcHeader">
+
+            <span
+                class="generate-grc-btn"
+                onclick="buildGRCProfile()">
+
+                ▶ Build GRC Profile
+
+            </span>
+
+        </div>
+
+    `;
+
+}
+
+
 
 // --------------------------------------------
 // Build GRC Profile
