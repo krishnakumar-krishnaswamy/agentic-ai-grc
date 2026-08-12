@@ -2381,6 +2381,11 @@ function showAuthorization(button) {
 }
 
 
+// --------------------------------------------
+// Selected Authorization Agent
+// --------------------------------------------
+
+let selectedAuthorizationAgent = "accountDeletionAgent";
 
 
 // --------------------------------------------
