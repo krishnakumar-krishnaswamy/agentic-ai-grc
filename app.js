@@ -2647,8 +2647,17 @@ function buildGRCProfile() {
 
 if (
     document
-        .querySelector(".center-card")
-        .classList.contains("authentication-card")
+    .querySelector(".center-card")
+    .classList.contains("authorization-card")
+) {
+
+    agent =
+        customerAuthorizationAgentRegistry[selectedAuthorizationAgent];
+
+} else if (
+    document
+    .querySelector(".center-card")
+    .classList.contains("authentication-card")
 ) {
 
     agent =
