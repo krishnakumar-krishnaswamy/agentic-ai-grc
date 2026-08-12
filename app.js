@@ -2293,6 +2293,21 @@ const customerAuthenticationAgentRegistry = {
 };
 
 // --------------------------------------------
+// Customer Authorization Agent Registry
+// --------------------------------------------
+
+const customerAuthorizationAgentRegistry = {
+
+    accountDeletionAgent: {
+
+        name: "Account Deletion Agent"
+
+    }
+
+};
+
+
+// --------------------------------------------
 // Customer Authorization Agent
 // --------------------------------------------
 
