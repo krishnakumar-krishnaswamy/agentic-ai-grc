@@ -2292,9 +2292,6 @@ const customerAuthenticationAgentRegistry = {
 
 };
 
-
-
-
 // --------------------------------------------
 // Customer Authorization Agent
 // --------------------------------------------
@@ -2304,17 +2301,87 @@ function showAuthorization(button) {
     document
         .getElementById("grcChildren")
         .classList.add("open");
+
     setActiveMenu(button);
 
-    renderCard(
+    const container =
+        document.getElementById("contentCard");
 
-        "Customer Authorization Agent",
+    container.innerHTML = `
 
-        "Pilot implementation coming soon."
+<div class="center-card authorization-card">
 
-    );
+    <div class="card-header">
+
+        <img src="assets/icons/key-round.svg">
+
+        <span>Customer Authorization Agent</span>
+
+    </div>
+
+    <div class="card-description">
+
+        Autonomous AI agent responsible for customer authorization.
+
+    </div>
+
+    <hr class="card-divider">
+
+    <div class="agent-layout">
+
+        <div class="agent-panel">
+
+            <div class="panel-title">
+
+                <img src="assets/icons/trusted-agents.svg">
+
+                <span>Trusted AI Agent Interactions</span>
+
+            </div>
+
+            <hr class="panel-divider">
+
+            <button
+                class="agent-item active"
+                onclick="selectTrustedAuthorizationAgent('accountDeletionAgent', this)">
+
+                <img src="assets/icons/agent.svg">
+
+                <span>Account Deletion Agent</span>
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="grc-panel"
+            id="grcPanel">
+
+            <div id="grcHeader">
+
+                <span
+                    class="generate-grc-btn"
+                    onclick="buildGRCProfile()">
+
+                    ▶ Build GRC Profile
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+`;
 
 }
+
+
+
 
 // --------------------------------------------
 // Build GRC Profile
