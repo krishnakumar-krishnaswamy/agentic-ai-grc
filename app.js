@@ -2300,9 +2300,160 @@ const customerAuthorizationAgentRegistry = {
 
     accountDeletionAgent: {
 
-        name: "Account Deletion Agent"
+    name: "Account Deletion Agent",
 
-    }
+    governance: [
+
+        {
+            title: "Agent Governance",
+
+            businessRationale:
+                "Establishes accountable governance for the autonomous Account Deletion Agent.",
+
+            guardrail:
+                "Requires defined ownership, authority boundaries, and accountability.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Agent Autonomy Governance",
+
+            businessRationale:
+                "Defines the approved level of autonomy for the Account Deletion Agent.",
+
+            guardrail:
+                "Requires explicit authorization boundaries and human oversight for high-impact actions.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Agent Lifecycle Governance",
+
+            businessRationale:
+                "Ensures the Account Deletion Agent remains governed throughout its operational lifecycle.",
+
+            guardrail:
+                "Requires controlled approval, monitoring, modification, suspension, and retirement.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    risks: [
+
+        {
+            title: "Unauthorized Agent Action",
+
+            businessRationale:
+                "Reduces the risk of the agent initiating account deletion outside approved authority.",
+
+            guardrail:
+                "Requires explicit authorization and defined conditions before initiating high-impact actions.",
+
+            industryReference:
+                "NIST AI RMF — Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Accidental Account Deletion",
+
+            businessRationale:
+                "Reduces the risk of unintended or erroneous agent actions causing irreversible customer impact.",
+
+            guardrail:
+                "Requires human approval, confirmation controls, and safeguards against unintended execution.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "Uncontrolled Agent-to-Agent Action",
+
+            businessRationale:
+                "Reduces the risk of another AI Agent inadvertently triggering account deletion.",
+
+            guardrail:
+                "Requires defined inter-agent authorization boundaries and controlled invocation.",
+
+            industryReference:
+                "NIST AI RMF — Govern and Manage; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    compliance: [
+
+        {
+            title: "AI Governance Compliance",
+
+            businessRationale:
+                "Aligns the Account Deletion Agent with the organization's established AI governance framework.",
+
+            guardrail:
+                "Requires documented ownership, authority, oversight, monitoring, and evidence.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "AI Accountability Compliance",
+
+            businessRationale:
+                "Establishes clear accountability for high-impact decisions made or initiated by the agent.",
+
+            guardrail:
+                "Requires decision traceability, accountable ownership, human oversight, and audit evidence.",
+
+            industryReference:
+                "NIST AI RMF — Govern; ISO/IEC 42001 — AI management system."
+        },
+
+        {
+            title: "AI Risk Management Compliance",
+
+            businessRationale:
+                "Ensures risks associated with autonomous account deletion are identified and managed.",
+
+            guardrail:
+                "Requires documented risk assessment, treatment, monitoring, and periodic review.",
+
+            industryReference:
+                "NIST AI RMF — Manage; ISO/IEC 42001 — AI management system."
+        }
+
+    ],
+
+    guardrails: [
+
+        "Explicit Deletion Authorization",
+
+        "Human Approval",
+
+        "Agent-to-Agent Invocation Controls",
+
+        "Decision Traceability"
+
+    ],
+
+    industryReferences: [
+
+        "NIST AI RMF — Govern",
+
+        "NIST AI RMF — Manage",
+
+        "ISO/IEC 42001 — AI management system"
+
+    ]
+
+}
 
 };
 
